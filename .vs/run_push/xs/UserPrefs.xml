@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{1BFCE4E8-3C11-008C-859A-0B3A98D20BA9}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/charactercontrool.cs">
+    <Files>
+      <File FileName="Assets/scripts/GameplayController.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/baratatch.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/camerafol.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/HighscoreController.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/menucontroler.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/charactercontrool.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="run_push" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="scripts" expanded="True">
+                <Node name="charactercontrool.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7aac47fe-7876-4584-b62d-c5913796d6e9" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

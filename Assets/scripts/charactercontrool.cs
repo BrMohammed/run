@@ -20,7 +20,6 @@ public class charactercontrool : MonoBehaviour
     
     void Start()
     {
-         
         Debug.Log("highscore : " +SimpelDb.read());
         speed = 15f;
         acceleration = 0.00002f;
@@ -34,7 +33,7 @@ public class charactercontrool : MonoBehaviour
         GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed += acceleration * Time.deltaTime);
         if (issaad == false)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) || Input.GetKeyDown(KeyCode.Space))
             {
                 if(Time.time > canjumpe)
                 {
