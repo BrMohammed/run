@@ -1,49 +1,78 @@
 ﻿using UnityEngine;
 using Mono.Data.Sqlite;
+using System.Collections;
+
 using System.Data;
 
 public class SimpelDb : MonoBehaviour
 {
-    protected static string dbname = "URI=file:mydb.db";
-    static SqliteConnection connection = new SqliteConnection(dbname);
-    static SqliteCommand command = connection.CreateCommand();
+    string DATABASE_NAME = "/mydatabase.db";
+    static string dbname;
 
     void Start()
     {
-       
+        string filepath = Application.persistentDataPath + DATABASE_NAME;
+        dbname = "URI=file:" + filepath;
         creatdB();
 
     }
-    void creatdB()
+
+        void creatdB()
     {
-        
-        connection.Open();
-        
-        command.CommandType = System.Data.CommandType.Text;
-        command.CommandText = "CREATE TABLE IF NOT EXISTS 'highscores' ('score' INTEGER NOT NULL);";
-        command.ExecuteNonQuery();
-        connection.Close();
+        using (var connection = new SqliteConnection(dbname))
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "CREATE TABLE IF NOT EXISTS highscores (npa INTEGER NOT NULL,score INTEGER NOT NULL);";
+                command.ExecuteNonQuery();
+                if(read("score") == "")
+                {
+                    command.CommandText = "INSERT INTO highscores VALUES (1,0);";
+                    command.ExecuteNonQuery();
+                }
+
+            }
+            connection.Close();
+        }
     }
 
-    public static void update(int heigscore)
+    public static void update(int heigscore,string write_into_table)
     {
-        connection.Open();
-        command.CommandText = @"UPDATE highscores SET score = $heigscore;";
-        command.Parameters.AddWithValue("$heigscore", heigscore);
-        command.ExecuteNonQuery();
-        connection.Close();
+        using (var connection = new SqliteConnection(dbname))
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = @"UPDATE highscores SET " + write_into_table + " = $heigscore;";
+                command.Parameters.AddWithValue("$heigscore", heigscore);
+                command.ExecuteNonQuery();
+            }
+           
+            connection.Close();
+        }
     }
 
-    public static string read()
+    public static string read(string read_from_table)
     {
-        string rd;
-        connection.Open();
-        command.CommandText = "SELECT score FROM highscores;";
-        IDataReader reader = command.ExecuteReader();
-        rd = reader["score"].ToString();
-        reader.Close();
-        command.ExecuteNonQuery();
-        connection.Close();
+        string rd = null;
+        using (var connection = new SqliteConnection(dbname))
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = @"SELECT " + read_from_table + " FROM highscores;";
+
+                using(IDataReader reader = command.ExecuteReader())
+                {
+                    rd = reader[read_from_table].ToString();
+                    reader.Close();
+                }
+                command.ExecuteNonQuery();
+            }
+            connection.Close();
+        }
         return (rd);
     }
+  
 }

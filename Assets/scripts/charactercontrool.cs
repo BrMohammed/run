@@ -5,7 +5,7 @@ using UnityEngine;
 public class charactercontrool : MonoBehaviour
 
 {
-    
+   
     private Rigidbody thisrigid;
     public static float speed = 15f;
    public static float acceleration = 0.00002f;
@@ -20,7 +20,8 @@ public class charactercontrool : MonoBehaviour
     
     void Start()
     {
-        Debug.Log("highscore : " +SimpelDb.read());
+       
+        //Debug.Log(Application.persistentDataPath);
         speed = 15f;
         acceleration = 0.00002f;
         thisrigid = GetComponent<Rigidbody>();

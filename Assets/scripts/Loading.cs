@@ -1,26 +1,32 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Loading : MonoBehaviour
 {
 	[SerializeField] [Range(2f,8f)] float loadingDelay = 2f;
 	[SerializeField]  GameObject GDPR_Popup;
-	static int npa = 1;
+	//static int npa = 1;
 	
 	void OnEnable()
 	{
-		
+		//SimpelDb.Cre
 		Time.timeScale = 1;
-		
-		if (PlayerPrefs.GetInt("npa", npa) == 1)
+		StartCoroutine(call());
+	}
+	IEnumerator call()
+    {
+		yield return new WaitForSeconds(1);
+		if (int.Parse(SimpelDb.read("npa")) == 1)
 			Invoke("CheckForGDPR", 1f);
 
-		Invoke ("StartGame", loadingDelay);
+		Invoke("StartGame", loadingDelay);
+
 	}
 
 	void StartGame ()
 	{
-				SceneManager.LoadSceneAsync (1);
+		SceneManager.LoadSceneAsync (1);
 	}
 
 	//GDPR
@@ -36,10 +42,7 @@ public class Loading : MonoBehaviour
 	//Popup events
 	public void OnUserClickAccept ()
 	{
-		
-		PlayerPrefs.SetInt("npa", 2);
-
-
+		SimpelDb.update(2,"npa");
 		//hide gdpr popup
 		GDPR_Popup.SetActive (false);
 		//play the game
@@ -48,9 +51,6 @@ public class Loading : MonoBehaviour
 
 	public void OnUserClickCancel ()
 	{
-
-		
-
 		//hide gdpr popup
 		GDPR_Popup.SetActive (false);
 		//play the game
