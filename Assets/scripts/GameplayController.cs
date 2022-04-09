@@ -43,6 +43,8 @@ public class GameplayController : MonoBehaviour
         {
             Beginthegame();
         }
+        else
+            menupanal.SetActive(true);
     }
     void makeinstance()
     {
