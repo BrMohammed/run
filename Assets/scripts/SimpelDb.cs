@@ -24,11 +24,11 @@ public class SimpelDb : MonoBehaviour
             connection.Open();
             using (var command = connection.CreateCommand())
             {
-                command.CommandText = "CREATE TABLE IF NOT EXISTS highscores (npa INTEGER NOT NULL,score INTEGER NOT NULL);";
+                command.CommandText = "CREATE TABLE IF NOT EXISTS highscores (npa INTEGER NOT NULL,TotalCoin INTEGER NOT NULL,score INTEGER NOT NULL,gamestart INTEGER NOT NULL,SaveDataShop LONGTEXT);";
                 command.ExecuteNonQuery();
                 if(read("score") == "")
                 {
-                    command.CommandText = "INSERT INTO highscores VALUES (1,0);";
+                    command.CommandText = "INSERT INTO highscores VALUES (1,4000,0,0,'');";
                     command.ExecuteNonQuery();
                 }
 
@@ -37,7 +37,7 @@ public class SimpelDb : MonoBehaviour
         }
     }
 
-    public static void update(int heigscore,string write_into_table)
+    public static void update(string heigscore,string write_into_table)
     {
         using (var connection = new SqliteConnection(dbname))
         {

@@ -10,7 +10,6 @@ public class Loading : MonoBehaviour
 	
 	void OnEnable()
 	{
-		//SimpelDb.Cre
 		Time.timeScale = 1;
 		StartCoroutine(call());
 	}
@@ -42,7 +41,7 @@ public class Loading : MonoBehaviour
 	//Popup events
 	public void OnUserClickAccept ()
 	{
-		SimpelDb.update(2,"npa");
+		SimpelDb.update(2.ToString(), "npa");
 		//hide gdpr popup
 		GDPR_Popup.SetActive (false);
 		//play the game

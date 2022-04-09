@@ -11,8 +11,11 @@ public class GameplayController : MonoBehaviour
     
     [SerializeField] private Text distancescore,gameoverscoretext, highscore;
     [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten;
+    [Header("characters")]
+    [SerializeField] private GameObject[] Characters;
     int destanceunite = 0;
     public bool gamebegin;
+    private int characterSelect;
 
 
     private AssetBundle myLoadedAssetBundle;
@@ -21,7 +24,9 @@ public class GameplayController : MonoBehaviour
     private Vector3 playerrespawn;
     private void Awake()
     {
-        
+        string shopDataString = SimpelDb.read("SaveDataShop");
+        characterSelect = int.Parse(shopDataString.Split(':', ',')[1]);
+        Characters[characterSelect].SetActive(true);
         charactercontrool.speed = 15f;
         charactercontrool.acceleration = 0.00002f;
         playermove = GameObject.FindGameObjectWithTag("Player");
@@ -45,6 +50,7 @@ public class GameplayController : MonoBehaviour
         }
         else
             menupanal.SetActive(true);
+        
     }
     void makeinstance()
     {
@@ -88,7 +94,7 @@ public class GameplayController : MonoBehaviour
     public void gameover()
     {
         if(int.Parse(SimpelDb.read("score")) <= destanceunite)
-            SimpelDb.update(destanceunite,"score");
+            SimpelDb.update(destanceunite.ToString(),"score");
 
         StartCoroutine(waitgameover());
     }
@@ -121,4 +127,9 @@ public class GameplayController : MonoBehaviour
         loop_of_return_canva.loop_berig_script = false;
     }
 
+
+    public void Shop()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
 }

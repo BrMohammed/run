@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace ShopSystem
 {
-    [CreateAssetMenu(fileName = "ShopData",menuName = "Scriptable/Creat ShopData")]
-    public class ShopData : ScriptableObject
+    [System.Serializable]
+    public class ShopData
     {
         public int SelectedIndex;
         public ShopItem[] ShopItems;
