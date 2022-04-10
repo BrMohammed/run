@@ -25,7 +25,7 @@ public class GameplayController : MonoBehaviour
     private void Awake()
     {
         string shopDataString = SimpelDb.read("SaveDataShop");
-        characterSelect = int.Parse(shopDataString.Split(':', ',')[1]);
+        characterSelect = shopDataString.Contains(":") ? int.Parse(shopDataString.Split(':', ',')[1]) : 0;
         Characters[characterSelect].SetActive(true);
         charactercontrool.speed = 15f;
         charactercontrool.acceleration = 0.00002f;
