@@ -7,6 +7,8 @@ public class charactercontrool : MonoBehaviour
 {
    
     private Rigidbody thisrigid;
+    private Vector3 EndToushP, StartTouchP;
+    private bool jumpAllowed = false;
     public static float speed = 15f;
    public static float acceleration = 0.00002f;
     public float jumpforce = 5f;
@@ -18,7 +20,7 @@ public class charactercontrool : MonoBehaviour
     private bool issaad = false;
 
     
-    void Start()
+    private void Start()
     {
        
         Debug.Log(Application.persistentDataPath);
@@ -29,35 +31,67 @@ public class charactercontrool : MonoBehaviour
         StartCoroutine(Bartime());
     }
 
-    void Update()
+    private void Update()
     {
         GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed += acceleration * Time.deltaTime);
         if (issaad == false)
         {
-            if ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) || Input.GetKeyDown(KeyCode.Space))
+
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+                StartTouchP = Input.GetTouch(0).position;
+            if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
             {
-                if(Time.time > canjumpe)
-                {
-                    thisrigid.velocity = new Vector3(0, jumpforce, 0);
-                    GetComponent<Animator>().SetBool("isRuning", false);
-                    canjumpe = Time.time + jumperate;
-                    StartCoroutine(passiveMe(0.6f));
-                }
+                EndToushP = Input.GetTouch(0).position;
+                if (StartTouchP.y < EndToushP.y && (thisrigid.velocity.y > -1 && thisrigid.velocity.y < 0))
+                    jumpAllowed = true;
             }
-           // if(Time.time < canjumpe)
-             //   GetComponent<Animator>().SetBool("isRuning", true);
+           //// if(thisrigid.velocity.y > -3410.8 && thisrigid.velocity.y < -3410)
+           //// {
+           //     Debug.Log(thisrigid.velocity.y);
+           //// }
+
+            //if ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) || Input.GetKeyDown(KeyCode.Space))
+            //{
+            //    //if(Time.time > canjumpe)
+            //    //{
+            //        thisrigid.velocity = new Vector3(0, jumpforce, 0);
+            //        GetComponent<Animator>().SetBool("isRuning", false);
+            //        canjumpe = Time.time + jumperate;
+            //        StartCoroutine(passiveMe(0.6f));
+            //    //}
+            //}
         }  
     }
 
+    //IEnumerator passiveMe(float secs)
+    //{
+    //    yield return new WaitForSeconds(secs);
+    //    if(issaad == false)
+    //        GetComponent<Animator>().SetBool("isRuning", true);
+    //}
+
+    private void FixedUpdate()
+    {
+        JumpFunkIfAllowed();
+    }
+    private void JumpFunkIfAllowed()
+    {
+        if(jumpAllowed)
+        {
+            thisrigid.AddForce(Vector3.up * jumpforce);
+            GetComponent<Animator>().SetBool("isRuning", false);
+            StartCoroutine(passiveMe(0.6f));
+            jumpAllowed = false;
+        }
+    }
     IEnumerator passiveMe(float secs)
     {
-        yield return new WaitForSeconds(secs);
-        if(issaad == false)
+        yield return new WaitForEndOfFrame();
+        if (issaad == false)
             GetComponent<Animator>().SetBool("isRuning", true);
     }
-
     /////////////////////////////////////////bara tatch/////////////////
-    
+
     void OnCollisionEnter(Collision character)
     {
          
