@@ -305,6 +305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7037142458037642431}
+  - component: {fileID: 7255479421485676042}
   m_Layer: 0
   m_Name: mixamorig:Neck
   m_TagString: Untagged
@@ -327,6 +328,20 @@ Transform:
   m_Father: {fileID: 4526236441839380674}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7255479421485676042
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874820795455229397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.061734587
+  m_Height: 0.13576017
+  m_Direction: 1
+  m_Center: {x: 0.0000000016077366, y: 0.036807995, z: 0.027174456}
 --- !u!1 &928319217940628401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1082,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4345480017238728518}
   - component: {fileID: 4306714960081330558}
-  - component: {fileID: 330924221525443538}
   - component: {fileID: 4306714960081330432}
   - component: {fileID: 4306714960081330433}
   - component: {fileID: 4306714960081330434}
@@ -1115,20 +1129,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!136 &330924221525443538
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3964838525976888828}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.28
-  m_Height: 1.16
-  m_Direction: 1
-  m_Center: {x: 0, y: 1.24, z: 0.1}
 --- !u!54 &4306714960081330432
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1157,8 +1157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8726fa23091444f83456c22f205da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 4.3
+  jumpforce: 250
   baraobj: {fileID: 3973440032337069741, guid: 7c85a5d3ec007a7499f49992a95f3362, type: 3}
+  seagull: {fileID: 6225311499698974542, guid: b15fec2e558d44f8cb6bf71abaa2ebd5, type: 3}
   baradestense: 50
 --- !u!114 &4306714960081330434
 MonoBehaviour:
@@ -1442,9 +1443,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3128638782388770985}
+  - component: {fileID: 4867073601689273634}
   m_Layer: 0
   m_Name: mixamorig:Spine1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1464,6 +1466,20 @@ Transform:
   m_Father: {fileID: 8392057781155695681}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4867073601689273634
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5111382282390279338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.15719022
+  m_Height: 0.66737795
+  m_Direction: 1
+  m_Center: {x: 0.002433822, y: -0.0077894325, z: 0.022018984}
 --- !u!1 &5153913151094187561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +1909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7647866408446430661}
+  - component: {fileID: 7015002989550558955}
   m_Layer: 0
   m_Name: mixamorig:Head
   m_TagString: Untagged
@@ -1915,6 +1932,20 @@ Transform:
   m_Father: {fileID: 7037142458037642431}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7015002989550558955
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6666418079198657481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.13808204
+  m_Height: 0.33007798
+  m_Direction: 1
+  m_Center: {x: 0.0007795835, y: 0.18328002, z: 0.006378454}
 --- !u!1 &6762577565833345145
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class destroydroad : MonoBehaviour
 {
-    public float destroytime = 60;
+    public float destroytime;
     private float currenttime;
     
     void Update()

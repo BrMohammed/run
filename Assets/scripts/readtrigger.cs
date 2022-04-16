@@ -21,7 +21,7 @@ public class readtrigger : MonoBehaviour
     void OnTriggerEnter(Collider character)
     {
         
-        if (character.tag == "Player" )
+        if (character.gameObject.tag == "Player" )
         {
            Instantiate(reodprifabe, new Vector3(0, 0, transform.parent.position.z + 262.4f), reodprifabe.rotation);
             

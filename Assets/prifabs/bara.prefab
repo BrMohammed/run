@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 8241246910111798085}
   - component: {fileID: 6540233169977765363}
   - component: {fileID: 1914408369535239712}
+  - component: {fileID: 1201538104495411420}
+  - component: {fileID: 7920229274654176671}
   m_Layer: 0
   m_Name: bara
   m_TagString: Bara
@@ -126,8 +128,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.020029325, y: 0.028187498, z: 0.12308319}
-  m_Center: {x: -0.000011189265, y: -0.00409396, z: 0.051541585}
+  m_Size: {x: 0.020029325, y: 0.021401849, z: 0.019937875}
+  m_Center: {x: -0.000011189265, y: -0.00070113695, z: -0.000031041687}
 --- !u!65 &6540233169977765363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -154,3 +156,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00086857076, y: 0.30972847, z: 0.0039375876}
   m_Center: {x: -0.009663899, y: -0.14486451, z: 0.111114345}
+--- !u!65 &1201538104495411420
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107848281565066430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00075464573, y: 0, z: 0.123083204}
+  m_Center: {x: 0.009626139, y: -0.011223086, z: 0.051541608}
+--- !u!65 &7920229274654176671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107848281565066430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00069232483, y: 0.021223066, z: 0.123083204}
+  m_Center: {x: -0.0096123675, y: -0.0006115519, z: 0.051541604}

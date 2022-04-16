@@ -9,11 +9,12 @@ public class charactercontrool : MonoBehaviour
     private Rigidbody thisrigid;
     private Vector3 EndToushP, StartTouchP;
     private bool jumpAllowed = false;
+    private bool SlideAllowed = false;
     public static float speed = 15f;
    public static float acceleration = 0.00002f;
     public float jumpforce = 5f;
     Animator anim;
-    public Transform baraobj;
+    public Transform baraobj,seagull;
     public float baradestense = 50;
     float jumperate = 0.9f;
     float canjumpe = 0.1f;
@@ -28,6 +29,8 @@ public class charactercontrool : MonoBehaviour
         acceleration = 0.00002f;
         thisrigid = GetComponent<Rigidbody>();
         GetComponent<Animator>().SetBool("isRuning", true);
+        GetComponent<Animator>().SetBool("isJumping", false);
+        GetComponent<Animator>().SetBool("isSliding", false);
         StartCoroutine(Bartime());
     }
 
@@ -44,63 +47,55 @@ public class charactercontrool : MonoBehaviour
                 EndToushP = Input.GetTouch(0).position;
                 if (StartTouchP.y < EndToushP.y && (thisrigid.velocity.y > -1 && thisrigid.velocity.y < 0))
                     jumpAllowed = true;
+                if (StartTouchP.y > EndToushP.y)
+                    SlideAllowed = true;
             }
-           //// if(thisrigid.velocity.y > -3410.8 && thisrigid.velocity.y < -3410)
-           //// {
-           //     Debug.Log(thisrigid.velocity.y);
-           //// }
 
-            //if ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) || Input.GetKeyDown(KeyCode.Space))
-            //{
-            //    //if(Time.time > canjumpe)
-            //    //{
-            //        thisrigid.velocity = new Vector3(0, jumpforce, 0);
-            //        GetComponent<Animator>().SetBool("isRuning", false);
-            //        canjumpe = Time.time + jumperate;
-            //        StartCoroutine(passiveMe(0.6f));
-            //    //}
-            //}
         }  
     }
 
-    //IEnumerator passiveMe(float secs)
-    //{
-    //    yield return new WaitForSeconds(secs);
-    //    if(issaad == false)
-    //        GetComponent<Animator>().SetBool("isRuning", true);
-    //}
-
     private void FixedUpdate()
     {
-        JumpFunkIfAllowed();
+
+        Actions();
     }
-    private void JumpFunkIfAllowed()
+    private void Actions()
     {
-        if(jumpAllowed)
+        if (jumpAllowed && issaad == false)
         {
             thisrigid.AddForce(Vector3.up * jumpforce);
-            GetComponent<Animator>().SetBool("isRuning", false);
-            StartCoroutine(passiveMe(0.6f));
+            GetComponent<Animator>().SetBool("isJumping", true);
+            StartCoroutine(passiveMe());
             jumpAllowed = false;
         }
+        if (SlideAllowed && issaad == false)
+        {
+            GetComponent<Animator>().SetBool("isSliding", true);
+            StartCoroutine(passiveMe());
+            SlideAllowed = false;
+        }
     }
-    IEnumerator passiveMe(float secs)
+    IEnumerator passiveMe()
     {
-        yield return new WaitForEndOfFrame();
+        yield return new WaitForFixedUpdate();
         if (issaad == false)
+        {
             GetComponent<Animator>().SetBool("isRuning", true);
+            GetComponent<Animator>().SetBool("isSliding", false);
+            GetComponent<Animator>().SetBool("isJumping", false);
+        }
     }
     /////////////////////////////////////////bara tatch/////////////////
 
     void OnCollisionEnter(Collision character)
     {
          
-        if (character.gameObject.name == "bara(Clone)")
+        if (character.gameObject.name == "bara(Clone)" || character.gameObject.name == "seagull(Clone)")
         {
             issaad = true;
             speed = 0;
             acceleration = 0;
-            GetComponent<Animator>().SetBool("issad", true);
+            GetComponent<Animator>().SetTrigger("issad");
             GameplayController.instance.gameover();
         }
     }
@@ -111,8 +106,11 @@ public class charactercontrool : MonoBehaviour
     {
         while ( speed != 0 )
         {
-            Instantiate(baraobj, new Vector3(0, 1.31f, transform.position.z + baradestense), baraobj.rotation);
-            yield return new WaitForSeconds(Random.Range(0.7f,2f));
+            if(Random.Range(0, 10) >= 8)
+                Instantiate(baraobj, new Vector3(0, 1.31f, transform.position.z + baradestense), baraobj.rotation);
+            else
+                Instantiate(seagull, new Vector3(0, 2.86f, transform.position.z + baradestense), seagull.rotation);
+            yield return new WaitForSeconds(Random.Range(1.2f,2f));
 
         }
     }
