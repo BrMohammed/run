@@ -14,7 +14,7 @@ public class charactercontrool : MonoBehaviour
    public static float acceleration = 0.00002f;
     public float jumpforce = 5f;
     Animator anim;
-    public Transform baraobj,seagull;
+    public Transform baraobj,seagull,cristal;
     public float baradestense = 50;
     float jumperate = 0.9f;
     float canjumpe = 0.1f;
@@ -110,6 +110,7 @@ public class charactercontrool : MonoBehaviour
                 Instantiate(baraobj, new Vector3(0, 1.31f, transform.position.z + baradestense), baraobj.rotation);
             else
                 Instantiate(seagull, new Vector3(0, 2.86f, transform.position.z + baradestense), seagull.rotation);
+            Instantiate(cristal, new Vector3(0, 0.6f, transform.position.z + baradestense), cristal.rotation);
             yield return new WaitForSeconds(Random.Range(1.2f,2f));
 
         }
