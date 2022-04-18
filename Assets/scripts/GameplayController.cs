@@ -9,7 +9,7 @@ public class GameplayController : MonoBehaviour
 {
     public static GameplayController instance;
     
-    [SerializeField] private Text distancescore,gameoverscoretext, highscore;
+    [SerializeField] private Text distancescore,gameoverscoretext, highscore, totalcoinGameover,totalcoinMenu;
     [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten;
     [Header("characters")]
     [SerializeField] private GameObject[] Characters;
@@ -24,6 +24,7 @@ public class GameplayController : MonoBehaviour
     private Vector3 playerrespawn;
     private void Awake()
     {
+        
         string shopDataString = SimpelDb.read("SaveDataShop");
         characterSelect = shopDataString.Contains(":") ? int.Parse(shopDataString.Split(':', ',')[1]) : 0;
         Characters[characterSelect].SetActive(true);
@@ -59,7 +60,8 @@ public class GameplayController : MonoBehaviour
     }
     private void Update()
     {
-       
+        totalcoinGameover.text = "" + int.Parse(SimpelDb.read("TotalCoin"));
+        totalcoinMenu.text = "" + int.Parse(SimpelDb.read("TotalCoin"));
     }
     //////////////////////////////////////////playerscore//////////////////////////////
     public void setscore()

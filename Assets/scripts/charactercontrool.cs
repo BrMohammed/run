@@ -19,11 +19,11 @@ public class charactercontrool : MonoBehaviour
     float jumperate = 0.9f;
     float canjumpe = 0.1f;
     private bool issaad = false;
+    private bool enter = false;
 
-    
+
     private void Start()
     {
-       
         Debug.Log(Application.persistentDataPath);
         speed = 15f;
         acceleration = 0.00002f;
@@ -32,6 +32,7 @@ public class charactercontrool : MonoBehaviour
         GetComponent<Animator>().SetBool("isJumping", false);
         GetComponent<Animator>().SetBool("isSliding", false);
         StartCoroutine(Bartime());
+        StartCoroutine(CoinTime());
     }
 
     private void Update()
@@ -90,7 +91,7 @@ public class charactercontrool : MonoBehaviour
     void OnCollisionEnter(Collision character)
     {
          
-        if (character.gameObject.name == "bara(Clone)" || character.gameObject.name == "seagull(Clone)")
+        if (character.gameObject.name == "bara(Clone)")
         {
             issaad = true;
             speed = 0;
@@ -100,20 +101,49 @@ public class charactercontrool : MonoBehaviour
         }
     }
 
+
+    /// ///////// ///////// suegulle //////////////
+
+    private void OnTriggerEnter(Collider character)
+    {
+        
+        if (character.gameObject.tag == "Bara")
+        {
+            issaad = true;
+            speed = 0;
+            acceleration = 0;
+            GetComponent<Animator>().SetTrigger("issad");
+            GameplayController.instance.gameover();
+        }
+        
+    }
+    private IEnumerator enter01()
+    {
+        yield return new WaitForEndOfFrame();
+        enter = true;
+    }
+
     /////////////////////////////bara Instantiate//////////////////////////////////
-    
+
     IEnumerator Bartime()
     {
         while ( speed != 0 )
         {
-            if(Random.Range(0, 10) >= 8)
+            if(Random.Range(0, 10) <= 8)
                 Instantiate(baraobj, new Vector3(0, 1.31f, transform.position.z + baradestense), baraobj.rotation);
             else
-                Instantiate(seagull, new Vector3(0, 2.86f, transform.position.z + baradestense), seagull.rotation);
-            Instantiate(cristal, new Vector3(0, 0.6f, transform.position.z + baradestense), cristal.rotation);
+                Instantiate(seagull, new Vector3(0.25f, 2.86f, transform.position.z + baradestense), seagull.rotation);
+            
             yield return new WaitForSeconds(Random.Range(1.2f,2f));
 
         }
     }
-
+    IEnumerator CoinTime()
+    {
+        while(speed != 0)
+        {
+            Instantiate(cristal, new Vector3(0, 0.6f, transform.position.z + baradestense), cristal.rotation);
+        }
+        yield return new WaitForSeconds(Random.Range(8f, 20f));
+    }
 }
