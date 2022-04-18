@@ -22,7 +22,7 @@ public class CristalMove : MonoBehaviour
             Cristal.velocity = new Vector3(0, Speed * Time.deltaTime, Cristal.velocity.z);
         transform.Rotate(Vector3.up * Rspeed * Time.deltaTime);
     }
-
+ 
     private void OnTriggerEnter(Collider character)
     {
         if (character.gameObject.tag == "Player")

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1642737121}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.32748684, g: 0.3101568, b: 0.16666435, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4264,26 +4264,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2754715921140800754, guid: 6c8e8e46fb69f463cb3731275214f4fc,
-        type: 3}
-      propertyPath: cristal
-      value: 
-      objectReference: {fileID: 5759817341026288153, guid: fe76ff7844fe04010a969361321f6aaa,
-        type: 3}
-    - target: {fileID: 2754715921140800754, guid: 6c8e8e46fb69f463cb3731275214f4fc,
-        type: 3}
-      propertyPath: jumpforce
-      value: 96000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754715921140800755, guid: 6c8e8e46fb69f463cb3731275214f4fc,
-        type: 3}
-      propertyPath: m_Mass
-      value: 400
-      objectReference: {fileID: 0}
     - target: {fileID: 3097313642260136424, guid: 6c8e8e46fb69f463cb3731275214f4fc,
         type: 3}
       propertyPath: m_Name
       value: char02@Running
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097313642260136424, guid: 6c8e8e46fb69f463cb3731275214f4fc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8e8e46fb69f463cb3731275214f4fc, type: 3}
@@ -4314,7 +4303,7 @@ PrefabInstance:
     - target: {fileID: 3964838525976888828, guid: ebeff10ae7e474c32a1845c533a5a1dc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4306714960081330432, guid: ebeff10ae7e474c32a1845c533a5a1dc,
         type: 3}
@@ -4418,6 +4407,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: char03@Running
       objectReference: {fileID: 0}
+    - target: {fileID: 5823143240681541915, guid: 642f3e443c0774f8fbf96ddeb59630f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6594436712455867297, guid: 642f3e443c0774f8fbf96ddeb59630f8,
         type: 3}
       propertyPath: m_RootOrder
@@ -4472,22 +4466,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6633411089076592003, guid: 642f3e443c0774f8fbf96ddeb59630f8,
-        type: 3}
-      propertyPath: cristal
-      value: 
-      objectReference: {fileID: 5759817341026288153, guid: fe76ff7844fe04010a969361321f6aaa,
-        type: 3}
-    - target: {fileID: 6633411089076592003, guid: 642f3e443c0774f8fbf96ddeb59630f8,
-        type: 3}
-      propertyPath: jumpforce
-      value: 96000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6633411089076592004, guid: 642f3e443c0774f8fbf96ddeb59630f8,
-        type: 3}
-      propertyPath: m_Mass
-      value: 400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 642f3e443c0774f8fbf96ddeb59630f8, type: 3}

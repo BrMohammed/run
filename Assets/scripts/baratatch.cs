@@ -16,6 +16,4 @@ public class baratatch : MonoBehaviour
         Instantiate(baraobj, new Vector3(0, 0, transform.parent.position.z + baradestense), baraobj.rotation);
         yield return new WaitForSeconds(Random.Range(1, 4));
     }
-
-
 }

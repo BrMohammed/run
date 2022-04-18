@@ -21,7 +21,6 @@ public class charactercontrool : MonoBehaviour
     private bool issaad = false;
     private bool enter = false;
 
-
     private void Start()
     {
         Debug.Log(Application.persistentDataPath);
@@ -52,7 +51,7 @@ public class charactercontrool : MonoBehaviour
                     SlideAllowed = true;
             }
 
-        }  
+        }
     }
 
     private void FixedUpdate()
@@ -66,19 +65,22 @@ public class charactercontrool : MonoBehaviour
         {
             thisrigid.AddForce(Vector3.up * jumpforce);
             GetComponent<Animator>().SetBool("isJumping", true);
+            GetComponent<Animator>().SetBool("isRuning", false);
             StartCoroutine(passiveMe());
             jumpAllowed = false;
         }
         if (SlideAllowed && issaad == false)
         {
             GetComponent<Animator>().SetBool("isSliding", true);
+            GetComponent<Animator>().SetBool("isRuning", false);
             StartCoroutine(passiveMe());
             SlideAllowed = false;
         }
+       
     }
     IEnumerator passiveMe()
     {
-        yield return new WaitForFixedUpdate();
+        yield return new WaitForSeconds(0.4f);
         if (issaad == false)
         {
             GetComponent<Animator>().SetBool("isRuning", true);
@@ -90,7 +92,6 @@ public class charactercontrool : MonoBehaviour
 
     void OnCollisionEnter(Collision character)
     {
-         
         if (character.gameObject.name == "bara(Clone)")
         {
             issaad = true;
@@ -100,7 +101,6 @@ public class charactercontrool : MonoBehaviour
             GameplayController.instance.gameover();
         }
     }
-
 
     /// ///////// ///////// suegulle //////////////
 
@@ -112,7 +112,7 @@ public class charactercontrool : MonoBehaviour
             issaad = true;
             speed = 0;
             acceleration = 0;
-            GetComponent<Animator>().SetTrigger("issad");
+            GetComponent<Animator>().SetTrigger("isdied");
             GameplayController.instance.gameover();
         }
         
@@ -133,17 +133,17 @@ public class charactercontrool : MonoBehaviour
                 Instantiate(baraobj, new Vector3(0, 1.31f, transform.position.z + baradestense), baraobj.rotation);
             else
                 Instantiate(seagull, new Vector3(0.25f, 2.86f, transform.position.z + baradestense), seagull.rotation);
-            
             yield return new WaitForSeconds(Random.Range(1.2f,2f));
 
         }
     }
     IEnumerator CoinTime()
     {
-        while(speed != 0)
+        while (speed != 0)
         {
-            Instantiate(cristal, new Vector3(0, 0.6f, transform.position.z + baradestense), cristal.rotation);
+            Instantiate(cristal, new Vector3(0.30f, 0.6f, transform.position.z + baradestense + Random.Range(50, 90)), cristal.rotation);
+            yield return new WaitForSeconds(Random.Range(8f, 20f));
         }
-        yield return new WaitForSeconds(Random.Range(8f, 20f));
+
     }
 }

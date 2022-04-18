@@ -17,7 +17,6 @@ public class GameplayController : MonoBehaviour
     public bool gamebegin;
     private int characterSelect;
 
-
     private AssetBundle myLoadedAssetBundle;
     private string[] scenePaths;
     private GameObject playermove;
@@ -41,7 +40,6 @@ public class GameplayController : MonoBehaviour
 
         StartCoroutine(call_return_loop());
     }
-
     IEnumerator call_return_loop()
     {
         yield return new WaitForEndOfFrame();
@@ -53,6 +51,7 @@ public class GameplayController : MonoBehaviour
             menupanal.SetActive(true);
         
     }
+    
     void makeinstance()
     {
         if (instance == null)
