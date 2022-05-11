@@ -13,9 +13,12 @@ public class GameplayController : MonoBehaviour
     [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten;
     [Header("characters")]
     [SerializeField] private GameObject[] Characters;
+    [SerializeField] private GameObject[] Maps;
     int destanceunite = 0;
     public bool gamebegin;
     private int characterSelect;
+    private int MapsSelect;
+
 
     private AssetBundle myLoadedAssetBundle;
     private string[] scenePaths;
@@ -25,8 +28,13 @@ public class GameplayController : MonoBehaviour
     {
         
         string shopDataString = SimpelDb.read("SaveDataShop");
+        string shopMapDataString = SimpelDb.read("SaveMapDataShop");
         characterSelect = shopDataString.Contains(":") ? int.Parse(shopDataString.Split(':', ',')[1]) : 0;
+        MapsSelect = shopMapDataString.Contains(":") ? int.Parse(shopMapDataString.Split(':', ',')[1]) : 0;
+        Debug.Log("MapsSelect" + MapsSelect);
+        Debug.Log("characterSelect" + characterSelect);
         Characters[characterSelect].SetActive(true);
+        Maps[MapsSelect].SetActive(true);
         charactercontrool.speed = 15f;
         charactercontrool.acceleration = 0.00002f;
         playermove = GameObject.FindGameObjectWithTag("Player");

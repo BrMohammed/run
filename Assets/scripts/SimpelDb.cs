@@ -24,11 +24,12 @@ public class SimpelDb : MonoBehaviour
             connection.Open();
             using (var command = connection.CreateCommand())
             {
-                command.CommandText = "CREATE TABLE IF NOT EXISTS highscores (npa INTEGER NOT NULL,TotalCoin INTEGER NOT NULL,score INTEGER NOT NULL,gamestart INTEGER NOT NULL,SaveDataShop LONGTEXT);";
+                command.CommandText = "CREATE TABLE IF NOT EXISTS highscores (npa INTEGER NOT NULL,TotalCoin INTEGER NOT NULL," +
+                    "score INTEGER NOT NULL,gamestart INTEGER NOT NULL,SaveDataShop LONGTEXT,SaveMapDataShop LONGTEXT);";
                 command.ExecuteNonQuery();
                 if(read("score") == "")
                 {
-                    command.CommandText = "INSERT INTO highscores VALUES (1,4000,0,0,'');";
+                    command.CommandText = "INSERT INTO highscores VALUES (1,4000,0,0,'','');";
                     command.ExecuteNonQuery();
                 }
 

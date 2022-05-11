@@ -1,26 +1,24 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/charactercontrool.cs">
+﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameplayController.cs">
     <Files>
-      <File FileName="Assets/scripts/shop/ShopData.cs" Line="7" Column="26" />
-      <File FileName="Assets/scripts/shop/ShopUi.cs" />
-      <File FileName="Assets/scripts/SimpelDb.cs" />
-      <File FileName="Assets/scripts/shop/SaveLodeData.cs" />
-      <File FileName="Assets/scripts/Loading.cs" />
-      <File FileName="Assets/scripts/GameplayController.cs" Line="11" Column="5" />
-      <File FileName="Assets/scripts/charactercontrool.cs" Line="87" Column="38" />
-      <File FileName="Assets/scripts/Suegullmove.cs" />
-      <File FileName="Assets/scripts/CristalMove.cs" Line="31" Column="25" />
-      <File FileName="Assets/scripts/readtrigger.cs" />
+      <File FileName="Assets/scripts/shop/ShopData.cs" Line="14" Column="25" />
+      <File FileName="Assets/scripts/shop/ShopUi.cs" Line="70" Column="14" />
+      <File FileName="Assets/scripts/SimpelDb.cs" Line="30" Column="40" />
+      <File FileName="Assets/scripts/shop/SaveLodeData.cs" Line="25" Column="84" />
+      <File FileName="Assets/scripts/GameplayController.cs" Line="35" Column="42" />
+      <File FileName="Assets/scripts/charactercontrool.cs" Line="25" Column="6" />
+      <File FileName="Assets/scripts/Loading.cs" Line="13" Column="45" />
+      <File FileName="Assets/scripts/shop/ShopMapData.cs" Line="17" Column="29" NotebookId="1" />
+      <File FileName="Assets/scripts/shop/ShopMapUi.cs" Line="33" Column="105" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="run" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="scripts" expanded="True">
-                  <Node name="charactercontrool.cs" selected="True" />
-                </Node>
+            <Node name="Assets" expanded="True">
+              <Node name="scripts" expanded="True">
+                <Node name="shop" expanded="True" />
+                <Node name="GameplayController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -31,7 +29,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c0c6169f-8b19-4768-a95d-67ab4519cb9d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1017f390-8d34-4af0-bde1-6ca685455cec" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

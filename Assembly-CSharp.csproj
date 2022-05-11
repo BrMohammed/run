@@ -127,6 +127,8 @@
      <Compile Include="Assets\scripts\readtrigger.cs" />
      <Compile Include="Assets\scripts\shop\SaveLodeData.cs" />
      <Compile Include="Assets\scripts\shop\ShopData.cs" />
+     <Compile Include="Assets\scripts\shop\ShopMapData.cs" />
+     <Compile Include="Assets\scripts\shop\ShopMapUi.cs" />
      <Compile Include="Assets\scripts\shop\ShopUi.cs" />
      <Compile Include="Assets\scripts\speed.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />

@@ -16,6 +16,7 @@ namespace ShopSystem
         private int curentIndex = 0;
         private int SelectedIndex = 0;
         public SaveLodeData saveLodeData;
+        public GameObject MapObj, CharCanvObj, CharactersObj;
 
         void Start()
         {
@@ -97,7 +98,18 @@ namespace ShopSystem
         {
             SceneManager.LoadSceneAsync(1);
         }
-
+        public void MAp()
+        {
+            MapObj.SetActive(true);
+            CharCanvObj.SetActive(false);
+            CharactersObj.SetActive(false);
+        }
+        public void characters()
+        {
+            MapObj.SetActive(false);
+            CharCanvObj.SetActive(true);
+            CharactersObj.SetActive(true);
+        }
     }
 }
 

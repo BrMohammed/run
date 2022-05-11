@@ -10,6 +10,7 @@ public class Loading : MonoBehaviour
 	
 	void OnEnable()
 	{
+		Debug.Log(Application.persistentDataPath);
 		Time.timeScale = 1;
 		StartCoroutine(call());
 	}

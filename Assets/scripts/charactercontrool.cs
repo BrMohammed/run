@@ -23,7 +23,6 @@ public class charactercontrool : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(Application.persistentDataPath);
         speed = 15f;
         acceleration = 0.00002f;
         thisrigid = GetComponent<Rigidbody>();
