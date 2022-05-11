@@ -15,10 +15,12 @@ namespace ShopSystem
         private int curentIndex = 0;
         private int SelectedIndex = 0;
         public SaveLodeData saveLodeData;
+        private int MapsSelect;
         void Start()
         {
             HighScore = int.Parse(SimpelDb.read("score"));
             saveLodeData.Initialized();
+            SelectedIndex = ShopMapDataUI.SelectedIndex;
             curentIndex = SelectedIndex;
             Next.onClick.AddListener(() => NextBtnMeth());
             Prev.onClick.AddListener(() => PrevBtnMeth());
@@ -51,6 +53,10 @@ namespace ShopSystem
                 if (Select.gameObject.activeSelf == false) Select.gameObject.SetActive(true);
             }
             Name.text = ShopMapDataUI.ShopItems[curentIndex].ItemName;
+            string shopMapDataString = SimpelDb.read("SaveMapDataShop");
+            MapsSelect = shopMapDataString.Contains(":") ? int.Parse(shopMapDataString.Split(':', ',')[1]) : 0;
+            if(curentIndex == MapsSelect)
+                Select.gameObject.SetActive(false);
         }
 
         private void PrevBtnMeth()
@@ -65,6 +71,10 @@ namespace ShopSystem
                 if (Next.gameObject.activeSelf == false) Next.gameObject.SetActive(true);
                 if (Select.gameObject.activeSelf == false) Select.gameObject.SetActive(true);
             }
+            string shopMapDataString = SimpelDb.read("SaveMapDataShop");
+            MapsSelect = shopMapDataString.Contains(":") ? int.Parse(shopMapDataString.Split(':', ',')[1]) : 0;
+            if (curentIndex == MapsSelect)
+                Select.gameObject.SetActive(false);
             Name.text = ShopMapDataUI.ShopItems[curentIndex].ItemName;
         }
         private void SelectBtnMeth()

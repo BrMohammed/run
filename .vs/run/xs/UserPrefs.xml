@@ -1,24 +1,26 @@
-﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameplayController.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/shop/ShopMapUi.cs">
     <Files>
       <File FileName="Assets/scripts/shop/ShopData.cs" Line="14" Column="25" />
-      <File FileName="Assets/scripts/shop/ShopUi.cs" Line="70" Column="14" />
-      <File FileName="Assets/scripts/SimpelDb.cs" Line="30" Column="40" />
-      <File FileName="Assets/scripts/shop/SaveLodeData.cs" Line="25" Column="84" />
-      <File FileName="Assets/scripts/GameplayController.cs" Line="35" Column="42" />
-      <File FileName="Assets/scripts/charactercontrool.cs" Line="25" Column="6" />
-      <File FileName="Assets/scripts/Loading.cs" Line="13" Column="45" />
-      <File FileName="Assets/scripts/shop/ShopMapData.cs" Line="17" Column="29" NotebookId="1" />
-      <File FileName="Assets/scripts/shop/ShopMapUi.cs" Line="33" Column="105" NotebookId="1" />
+      <File FileName="Assets/scripts/SimpelDb.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/shop/SaveLodeData.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GameplayController.cs" Line="40" Column="65" />
+      <File FileName="Assets/scripts/charactercontrool.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/shop/ShopUi.cs" Line="79" Column="52" />
+      <File FileName="Assets/scripts/shop/ShopMapData.cs" Line="17" Column="32" NotebookId="1" />
+      <File FileName="Assets/scripts/shop/ShopMapUi.cs" Line="21" Column="59" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="run" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="scripts" expanded="True">
-                <Node name="shop" expanded="True" />
-                <Node name="GameplayController.cs" selected="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="scripts" expanded="True">
+                  <Node name="shop" expanded="True">
+                    <Node name="ShopMapUi.cs" selected="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>

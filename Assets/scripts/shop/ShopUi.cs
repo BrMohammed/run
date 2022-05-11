@@ -17,6 +17,7 @@ namespace ShopSystem
         private int SelectedIndex = 0;
         public SaveLodeData saveLodeData;
         public GameObject MapObj, CharCanvObj, CharactersObj;
+        private int MapsSelect;
 
         void Start()
         {
@@ -54,6 +55,10 @@ namespace ShopSystem
                 if (Prev.gameObject.activeSelf == false) Prev.gameObject.SetActive(true);
                 if (Select.gameObject.activeSelf == false) Select.gameObject.SetActive(true);
             }
+            string shopMapDataString = SimpelDb.read("SaveDataShop");
+            MapsSelect = shopMapDataString.Contains(":") ? int.Parse(shopMapDataString.Split(':', ',')[1]) : 0;
+            if (curentIndex == MapsSelect)
+                Select.gameObject.SetActive(false);
         }
 
         private void PrevBtnMeth()
@@ -68,6 +73,10 @@ namespace ShopSystem
                 if (Next.gameObject.activeSelf == false) Next.gameObject.SetActive(true);
                 if (Select.gameObject.activeSelf == false) Select.gameObject.SetActive(true);
             }
+            string shopMapDataString = SimpelDb.read("SaveDataShop");
+            MapsSelect = shopMapDataString.Contains(":") ? int.Parse(shopMapDataString.Split(':', ',')[1]) : 0;
+            if (curentIndex == MapsSelect)
+                Select.gameObject.SetActive(false);
         }
         private void SelectBtnMeth()
         {

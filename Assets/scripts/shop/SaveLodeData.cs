@@ -12,10 +12,15 @@ namespace ShopSystem
         public void Initialized()
         {
             if (int.Parse(SimpelDb.read("gamestart")) == 1)
+            {
+                LoadMapData();
                 LoadData();
+            }
+                
             else
             {
                 SaveData();
+                SaveMapData();
                 SimpelDb.update(1.ToString(), "gamestart");
             }
         }
@@ -23,28 +28,23 @@ namespace ShopSystem
         {
             string ShopDataString = JsonUtility.ToJson(shopUi.ShopDataUI);
             SimpelDb.update(ShopDataString, "SaveDataShop");
-            Debug.Log(ShopDataString);
-            Debug.Log("Saved");
         }
         public void LoadData()
         {
             string shopDataString = SimpelDb.read("SaveDataShop");
             shopUi.ShopDataUI = new ShopData();
             shopUi.ShopDataUI = JsonUtility.FromJson<ShopData>(shopDataString);
-            Debug.Log("Loaded");
         }
         public void SaveMapData()
         {
             string ShopMapDataString = JsonUtility.ToJson(shopmapui.ShopMapDataUI);
             SimpelDb.update(ShopMapDataString, "SaveMapDataShop");
-            Debug.Log("SavedMAP " + ShopMapDataString);
         }
         public void LoadMapData()
         {
             string ShopMapDataString = SimpelDb.read("SaveMapDataShop");
             shopmapui.ShopMapDataUI = new ShopMapData();
             shopmapui.ShopMapDataUI = JsonUtility.FromJson<ShopMapData>(ShopMapDataString);
-            Debug.Log("Loaded Map ");
         }
         public void ClearData()
         {
