@@ -1,25 +1,24 @@
 ﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Audio/Sound.cs">
     <Files>
-      <File FileName="Assets/scripts/shop/ShopData.cs" Line="14" Column="25" />
+      <File FileName="Assets/scripts/shop/ShopData.cs" Line="23" Column="1" />
       <File FileName="Assets/scripts/SimpelDb.cs" />
       <File FileName="Assets/scripts/shop/SaveLodeData.cs" />
       <File FileName="Assets/scripts/GameplayController.cs" />
       <File FileName="Assets/scripts/charactercontrool.cs" />
       <File FileName="Assets/scripts/shop/ShopUi.cs" />
-      <File FileName="Assets/scripts/Audio/AudioManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Audio/Sound.cs" Line="10" Column="9" NotebookId="1" />
+      <File FileName="Assets/scripts/Audio/AudioManager.cs" />
+      <File FileName="Assets/scripts/Audio/Sound.cs" Line="13" Column="1" />
+      <File FileName="Assets/scripts/shop/ShopMapData.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="run" expanded="True">
-            <Node name="Assets" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
               <Node name="scripts" expanded="True">
                 <Node name="Audio" expanded="True" />
-                <Node name="shop" expanded="True">
-                  <Node name="ShopData.cs" selected="True" />
-                </Node>
+                <Node name="shop" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -30,7 +29,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cba02870-00dd-4b3d-9d66-336ac64daad5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="acb8cb5c-23d7-4284-a60a-c7b5e6a67a3c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
