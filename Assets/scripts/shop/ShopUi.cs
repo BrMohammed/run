@@ -16,8 +16,9 @@ namespace ShopSystem
         private int curentIndex = 0;
         private int SelectedIndex = 0;
         public SaveLodeData saveLodeData;
-        public GameObject MapObj, CharCanvObj, CharactersObj;
+        public GameObject MapObj, CharCanvObj, CharactersObj, SoundObj, SoundOnObj, SounOffObj, MusicOnObj, MusicOffObj;
         private int MapsSelect;
+        private static bool button = false;
 
         void Start()
         {
@@ -45,7 +46,7 @@ namespace ShopSystem
 
         private void NextBtnMeth()
         {
-            
+            SoundObj.SetActive(false);
             if (curentIndex < ShopDataUI.ShopItems.Length - 1)
             {
                 FindObjectOfType<AudioManager>().PlaySound("click");
@@ -65,6 +66,7 @@ namespace ShopSystem
 
         private void PrevBtnMeth()
         {
+            SoundObj.SetActive(false);
             if (curentIndex > 0)
             {
                 FindObjectOfType<AudioManager>().PlaySound("click");
@@ -84,6 +86,7 @@ namespace ShopSystem
         private void SelectBtnMeth()
         {
             FindObjectOfType<AudioManager>().PlaySound("click");
+            SoundObj.SetActive(false);
             bool yes_is_selected = false;
             if(ShopDataUI.ShopItems[curentIndex].isUnlocked == true)
                 yes_is_selected = true;
@@ -118,6 +121,7 @@ namespace ShopSystem
             MapObj.SetActive(true);
             CharCanvObj.SetActive(false);
             CharactersObj.SetActive(false);
+            SoundObj.SetActive(false);
         }
         public void characters()
         {
@@ -125,6 +129,56 @@ namespace ShopSystem
             MapObj.SetActive(false);
             CharCanvObj.SetActive(true);
             CharactersObj.SetActive(true);
+            SoundObj.SetActive(false);
+        }
+        public void Sound()
+        {
+            FindObjectOfType<AudioManager>().PlaySound("click");
+            SoundObj.active = !SoundObj.active;
+        }
+        public void SoundOn()
+        {
+            FindObjectOfType<AudioManager>().PlaySound("click");
+            FindObjectOfType<AudioManager>().MuteSound("cancel");
+            FindObjectOfType<AudioManager>().MuteSound("loos");
+            FindObjectOfType<AudioManager>().MuteSound("femal jump");
+            FindObjectOfType<AudioManager>().MuteSound("man jump");
+            FindObjectOfType<AudioManager>().MuteSound("run");
+            FindObjectOfType<AudioManager>().MuteSound("coin");
+            FindObjectOfType<AudioManager>().MuteSound("slide");
+            FindObjectOfType<AudioManager>().MuteSound("click");
+            SounOffObj.SetActive(true);
+            SoundOnObj.SetActive(false);
+
+        }
+        public void SoundOff()
+        {
+            FindObjectOfType<AudioManager>().PlaySound("click");
+            FindObjectOfType<AudioManager>().MuteSound("cancel");
+            FindObjectOfType<AudioManager>().MuteSound("loos");
+            FindObjectOfType<AudioManager>().MuteSound("femal jump");
+            FindObjectOfType<AudioManager>().MuteSound("man jump");
+            FindObjectOfType<AudioManager>().MuteSound("run");
+            FindObjectOfType<AudioManager>().MuteSound("coin");
+            FindObjectOfType<AudioManager>().MuteSound("slide");
+            FindObjectOfType<AudioManager>().MuteSound("click");
+            SounOffObj.SetActive(false);
+            SoundOnObj.SetActive(true);
+        }
+        public void MusicOn()
+        {
+            FindObjectOfType<AudioManager>().PlaySound("click");
+            FindObjectOfType<AudioManager>().MuteSound("background");
+            MusicOffObj.SetActive(true);
+            MusicOnObj.SetActive(false);
+
+        }
+        public void MusicOff()
+        {
+            FindObjectOfType<AudioManager>().PlaySound("click");
+            FindObjectOfType<AudioManager>().MuteSound("background");
+            MusicOffObj.SetActive(false);
+            MusicOnObj.SetActive(true);
         }
     }
 }

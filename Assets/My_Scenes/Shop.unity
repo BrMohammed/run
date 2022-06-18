@@ -203,7 +203,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2071313326}
-        m_MethodName: 
+        m_MethodName: SoundOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -397,7 +397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &148446187
 RectTransform:
   m_ObjectHideFlags: 0
@@ -461,7 +461,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2071313326}
-        m_MethodName: 
+        m_MethodName: SoundOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -963,7 +963,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2071313326}
-        m_MethodName: 
+        m_MethodName: Sound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &406501101
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1104,7 +1104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &418165753
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1168,7 +1168,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2071313326}
-        m_MethodName: 
+        m_MethodName: MusicOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2366,7 +2366,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2071313326}
-        m_MethodName: 
+        m_MethodName: MusicOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3915,6 +3915,11 @@ MonoBehaviour:
   MapObj: {fileID: 1428405579}
   CharCanvObj: {fileID: 1074780605}
   CharactersObj: {fileID: 537572579}
+  SoundObj: {fileID: 406501100}
+  SoundOnObj: {fileID: 98404410}
+  SounOffObj: {fileID: 148446186}
+  MusicOnObj: {fileID: 887202821}
+  MusicOffObj: {fileID: 418165752}
 --- !u!114 &2071313327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3966,6 +3971,7 @@ MonoBehaviour:
   Prev: {fileID: 2114264017}
   Select: {fileID: 2079653914}
   saveLodeData: {fileID: 1709976705}
+  SoundObj: {fileID: 406501100}
 --- !u!1 &2079653912
 GameObject:
   m_ObjectHideFlags: 0

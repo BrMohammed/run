@@ -15,6 +15,7 @@ namespace ShopSystem
         private int curentIndex = 0;
         private int SelectedIndex = 0;
         public SaveLodeData saveLodeData;
+        public GameObject SoundObj;
         private int MapsSelect;
         void Start()
         {
@@ -42,6 +43,7 @@ namespace ShopSystem
 
         private void NextBtnMeth()
         {
+            SoundObj.SetActive(false);
             if (curentIndex < ShopMapDataUI.ShopItems.Length - 1)
             {
                 FindObjectOfType<AudioManager>().PlaySound("click");
@@ -62,6 +64,7 @@ namespace ShopSystem
 
         private void PrevBtnMeth()
         {
+            SoundObj.SetActive(false);
             if (curentIndex > 0)
             {
                 FindObjectOfType<AudioManager>().PlaySound("click");
@@ -81,6 +84,7 @@ namespace ShopSystem
         }
         private void SelectBtnMeth()
         {
+            SoundObj.SetActive(false);
             FindObjectOfType<AudioManager>().PlaySound("click");
             bool yes_is_selected = false;
             if (ShopMapDataUI.ShopItems[curentIndex].IsUnlocked == true)
