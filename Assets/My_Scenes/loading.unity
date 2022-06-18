@@ -1698,10 +1698,10 @@ MonoBehaviour:
   - name: loos
     clip: {fileID: 8300000, guid: 39f36b75d845a45aba171bd8fca592a0, type: 3}
     volum: 1
-    pitch: 1
+    pitch: 1.1
     loop: 0
     source: {fileID: 0}
-  - name: 'femal jump '
+  - name: femal jump
     clip: {fileID: 8300000, guid: 8f17823d81c054574b57f9582f402293, type: 3}
     volum: 1
     pitch: 1
