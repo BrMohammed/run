@@ -25,11 +25,11 @@ public class SimpelDb : MonoBehaviour
             using (var command = connection.CreateCommand())
             {
                 command.CommandText = "CREATE TABLE IF NOT EXISTS highscores (npa INTEGER NOT NULL,TotalCoin INTEGER NOT NULL," +
-                    "score INTEGER NOT NULL,gamestart INTEGER NOT NULL,SaveDataShop LONGTEXT,SaveMapDataShop LONGTEXT, Sound Bool,Music Bool);";
+                    "score INTEGER NOT NULL,gamestart INTEGER NOT NULL,SaveDataShop LONGTEXT,SaveMapDataShop LONGTEXT,Sound INTEGER NOT NULL,Music INTEGER NOT NULL);";
                 command.ExecuteNonQuery();
                 if(read("score") == "")
                 {
-                    command.CommandText = "INSERT INTO highscores VALUES (1,4000,0,0,'','',true,true);";
+                    command.CommandText = "INSERT INTO highscores VALUES (1,4000,0,0,'','',1,1);";
                     command.ExecuteNonQuery();
                 }
 

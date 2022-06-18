@@ -26,9 +26,9 @@ public class Loading : MonoBehaviour
 	void StartGame ()
 	{
 
-		if (bool.Parse(SimpelDb.read("Sound")) == false)
+		if (int.Parse(SimpelDb.read("Sound")) == 0)
 			M_Sound();
-		if (bool.Parse(SimpelDb.read("Music")) == false)
+		if (int.Parse(SimpelDb.read("Music")) == 0)
 			M_Music();
 		FindObjectOfType<AudioManager>().PlaySound("background");
 		SceneManager.LoadSceneAsync (1);

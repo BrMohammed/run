@@ -39,7 +39,7 @@ namespace ShopSystem
         }
         void SoinAndMusicFromDb()
         {
-            if (bool.Parse(SimpelDb.read("Sound")) == true)
+            if (int.Parse(SimpelDb.read("Sound")) == 0)
             {
                 SounOffObj.SetActive(false);
                 SoundOnObj.SetActive(true);
@@ -49,7 +49,7 @@ namespace ShopSystem
                 SounOffObj.SetActive(true);
                 SoundOnObj.SetActive(false);
             }
-            if (bool.Parse(SimpelDb.read("Music")) == true)
+            if (int.Parse(SimpelDb.read("Music")) == 0)
             {
                 MusicOffObj.SetActive(false);
                 MusicOnObj.SetActive(true);
@@ -164,7 +164,7 @@ namespace ShopSystem
         {
             M_Sound();
             FindObjectOfType<AudioManager>().PlaySound("click");
-            SimpelDb.update(1.ToString(), "Sound");
+            SimpelDb.update(0.ToString(), "Sound");
             SounOffObj.SetActive(false);
             SoundOnObj.SetActive(true);
 
@@ -172,7 +172,7 @@ namespace ShopSystem
         public void SoundOff()
         {
             M_Sound();
-            SimpelDb.update(0.ToString(), "Sound");
+            SimpelDb.update(1.ToString(), "Sound");
             SounOffObj.SetActive(true);
             SoundOnObj.SetActive(false);
         }
@@ -180,7 +180,8 @@ namespace ShopSystem
         {
             M_Music();
             FindObjectOfType<AudioManager>().PlaySound("click");
-            SimpelDb.update(1.ToString(), "Music");
+            SimpelDb.update(0.ToString(), "Music");
+            Debug.Log(SimpelDb.read("Music"));
             MusicOffObj.SetActive(false);
             MusicOnObj.SetActive(true);
 
@@ -188,7 +189,8 @@ namespace ShopSystem
         public void MusicOff()
         {
             M_Music();
-            SimpelDb.update(0.ToString(), "Music");
+            SimpelDb.update(1.ToString(), "Music");
+            Debug.Log(SimpelDb.read("Music"));
             MusicOffObj.SetActive(true);
             MusicOnObj.SetActive(false);
         }
