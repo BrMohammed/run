@@ -22,6 +22,7 @@ namespace ShopSystem
 
         void Start()
         {
+            SoinAndMusicFromDb();
             Shopcoin = int.Parse(SimpelDb.read("TotalCoin"));
             saveLodeData.Initialized();
             SelectedIndex = ShopDataUI.SelectedIndex;
@@ -35,6 +36,29 @@ namespace ShopSystem
             Select.gameObject.SetActive(false);
             if (curentIndex == 0) Prev.gameObject.SetActive(false);
             if (curentIndex == ShopDataUI.ShopItems.Length - 1) Next.gameObject.SetActive(false);
+        }
+        void SoinAndMusicFromDb()
+        {
+            if (bool.Parse(SimpelDb.read("Sound")) == true)
+            {
+                SounOffObj.SetActive(true);
+                SoundOnObj.SetActive(false);
+            }
+            else
+            {
+                SounOffObj.SetActive(false);
+                SoundOnObj.SetActive(true);
+            }
+            if (bool.Parse(SimpelDb.read("Music")) == true)
+            {
+                MusicOffObj.SetActive(true);
+                MusicOnObj.SetActive(false);
+            }
+            else
+            {
+                MusicOffObj.SetActive(false);
+                MusicOnObj.SetActive(true);
+            }
         }
         private void setinfo()
         {
@@ -138,21 +162,37 @@ namespace ShopSystem
         }
         public void SoundOn()
         {
-            FindObjectOfType<AudioManager>().PlaySound("click");
-            FindObjectOfType<AudioManager>().MuteSound("cancel");
-            FindObjectOfType<AudioManager>().MuteSound("loos");
-            FindObjectOfType<AudioManager>().MuteSound("femal jump");
-            FindObjectOfType<AudioManager>().MuteSound("man jump");
-            FindObjectOfType<AudioManager>().MuteSound("run");
-            FindObjectOfType<AudioManager>().MuteSound("coin");
-            FindObjectOfType<AudioManager>().MuteSound("slide");
-            FindObjectOfType<AudioManager>().MuteSound("click");
+            M_Sound();
+            SimpelDb.update(1.ToString(), "Sound");
             SounOffObj.SetActive(true);
             SoundOnObj.SetActive(false);
 
         }
         public void SoundOff()
         {
+            M_Sound();
+            SimpelDb.update(0.ToString(), "Sound");
+            SounOffObj.SetActive(false);
+            SoundOnObj.SetActive(true);
+        }
+        public void MusicOn()
+        {
+            M_Music();
+            SimpelDb.update(1.ToString(), "Music");
+            MusicOffObj.SetActive(true);
+            MusicOnObj.SetActive(false);
+
+        }
+        public void MusicOff()
+        {
+            M_Music();
+            SimpelDb.update(1.ToString(), "Music");
+            MusicOffObj.SetActive(false);
+            MusicOnObj.SetActive(true);
+        }
+
+        public void M_Sound()
+        {
             FindObjectOfType<AudioManager>().PlaySound("click");
             FindObjectOfType<AudioManager>().MuteSound("cancel");
             FindObjectOfType<AudioManager>().MuteSound("loos");
@@ -162,23 +202,11 @@ namespace ShopSystem
             FindObjectOfType<AudioManager>().MuteSound("coin");
             FindObjectOfType<AudioManager>().MuteSound("slide");
             FindObjectOfType<AudioManager>().MuteSound("click");
-            SounOffObj.SetActive(false);
-            SoundOnObj.SetActive(true);
         }
-        public void MusicOn()
+        public void M_Music()
         {
             FindObjectOfType<AudioManager>().PlaySound("click");
             FindObjectOfType<AudioManager>().MuteSound("background");
-            MusicOffObj.SetActive(true);
-            MusicOnObj.SetActive(false);
-
-        }
-        public void MusicOff()
-        {
-            FindObjectOfType<AudioManager>().PlaySound("click");
-            FindObjectOfType<AudioManager>().MuteSound("background");
-            MusicOffObj.SetActive(false);
-            MusicOnObj.SetActive(true);
         }
     }
 }

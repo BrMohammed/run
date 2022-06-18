@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using ShopSystem;
 
 public class Loading : MonoBehaviour
 {
 	[SerializeField] [Range(2f,8f)] float loadingDelay = 2f;
 	[SerializeField]  GameObject GDPR_Popup;
 	//static int npa = 1;
-	
+	ShopUi shopUi = new ShopUi();
 	void OnEnable()
 	{
 		Debug.Log(Application.persistentDataPath);
@@ -26,6 +27,14 @@ public class Loading : MonoBehaviour
 
 	void StartGame ()
 	{
+
+		if (bool.Parse(SimpelDb.read("Sound")) == false)
+        {
+			Debug.Log("hi");
+			shopUi.M_Sound();
+        }
+		if (bool.Parse(SimpelDb.read("Music")) == false)
+			shopUi.M_Music();
 		FindObjectOfType<AudioManager>().PlaySound("background");
 		SceneManager.LoadSceneAsync (1);
 	}
