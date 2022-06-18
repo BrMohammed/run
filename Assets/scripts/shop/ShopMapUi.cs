@@ -44,6 +44,7 @@ namespace ShopSystem
         {
             if (curentIndex < ShopMapDataUI.ShopItems.Length - 1)
             {
+                FindObjectOfType<AudioManager>().PlaySound("click");
                 Maps[curentIndex].SetActive(false);
                 curentIndex++;
                 Maps[curentIndex].SetActive(true);
@@ -63,6 +64,7 @@ namespace ShopSystem
         {
             if (curentIndex > 0)
             {
+                FindObjectOfType<AudioManager>().PlaySound("click");
                 Maps[curentIndex].SetActive(false);
                 curentIndex--;
                 Maps[curentIndex].SetActive(true);
@@ -79,6 +81,7 @@ namespace ShopSystem
         }
         private void SelectBtnMeth()
         {
+            FindObjectOfType<AudioManager>().PlaySound("click");
             bool yes_is_selected = false;
             if (ShopMapDataUI.ShopItems[curentIndex].IsUnlocked == true)
                 yes_is_selected = true;

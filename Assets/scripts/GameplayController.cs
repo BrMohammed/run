@@ -24,9 +24,9 @@ public class GameplayController : MonoBehaviour
     private string[] scenePaths;
     private GameObject playermove;
     private Vector3 playerrespawn;
+    private bool loos = false;
     private void Awake()
     {
-        
         string shopDataString = SimpelDb.read("SaveDataShop");
         string shopMapDataString = SimpelDb.read("SaveMapDataShop");
         characterSelect = shopDataString.Contains(":") ? int.Parse(shopDataString.Split(':', ',')[1]) : 0;
@@ -84,17 +84,20 @@ public class GameplayController : MonoBehaviour
     //////////////////////////////////////////pause//////////////////////////////
     public void pauseThegame()
     {
+        FindObjectOfType<AudioManager>().PlaySound("click");
         Time.timeScale = 0f;
         pausePanal.SetActive(true);
     }
     public void RusumeThegame()
     {
+        FindObjectOfType<AudioManager>().PlaySound("click");
         Time.timeScale = 1f;
         pausePanal.SetActive(false);
 
     }
     public void menuhome()
     {
+        FindObjectOfType<AudioManager>().PlaySound("click");
         Time.timeScale = 1f;
         SceneManager.LoadScene("menu", LoadSceneMode.Single);
 
@@ -102,9 +105,13 @@ public class GameplayController : MonoBehaviour
     //////////////////////////////////////////Game over//////////////////////////////
     public void gameover()
     {
-        if(int.Parse(SimpelDb.read("score")) <= destanceunite)
+        if(loos == false)
+        {
+            loos = true;
+            FindObjectOfType<AudioManager>().PlaySound("loos");
+        }
+        if (int.Parse(SimpelDb.read("score")) <= destanceunite)
             SimpelDb.update(destanceunite.ToString(),"score");
-
         StartCoroutine(waitgameover());
     }
     IEnumerator waitgameover()
@@ -121,6 +128,7 @@ public class GameplayController : MonoBehaviour
     [Obsolete]
     public void returnegame()
     {
+        FindObjectOfType<AudioManager>().PlaySound("click");
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         loop_of_return_canva.loop_berig_script = true;
@@ -129,6 +137,7 @@ public class GameplayController : MonoBehaviour
 
     public void Beginthegame()
     {
+        FindObjectOfType<AudioManager>().PlaySound("click");
         destancepanel.SetActive(true);
         pausebutten.SetActive(true);
         menupanal.SetActive(false);
@@ -139,6 +148,7 @@ public class GameplayController : MonoBehaviour
 
     public void Shop()
     {
+        FindObjectOfType<AudioManager>().PlaySound("click");
         SceneManager.LoadSceneAsync(2);
     }
 }

@@ -408,3 +408,7 @@
 /goinfre/brmohamm/unity projects/run/obj/Debug/Assembly-CSharp-Editor.csproj.CopyComplete
 /goinfre/brmohamm/unity projects/run/obj/Debug/Assembly-CSharp-Editor.dll
 /goinfre/brmohamm/unity projects/run/obj/Debug/Assembly-CSharp-Editor.pdb
+/goinfre/brmohamm/run/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache
+/goinfre/brmohamm/run/obj/Debug/Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+/goinfre/brmohamm/run/obj/Debug/Assembly-CSharp-Editor.dll
+/goinfre/brmohamm/run/obj/Debug/Assembly-CSharp-Editor.pdb

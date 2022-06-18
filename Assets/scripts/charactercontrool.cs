@@ -21,6 +21,10 @@ public class charactercontrool : MonoBehaviour
     private bool issaad = false;
     private bool enter = false;
 
+    private float period = 0f;
+
+    private int characterSelect;
+
     private void Start()
     {
         speed = 15f;
@@ -31,11 +35,14 @@ public class charactercontrool : MonoBehaviour
         GetComponent<Animator>().SetBool("isSliding", false);
         StartCoroutine(Bartime());
         StartCoroutine(CoinTime());
+        string shopDataString = SimpelDb.read("SaveDataShop");
+        characterSelect = shopDataString.Contains(":") ? int.Parse(shopDataString.Split(':', ',')[1]) : 0;
     }
 
     private void Update()
     {
         GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed += acceleration * Time.deltaTime);
+        period += Time.deltaTime;
         if (issaad == false)
         {
 
@@ -49,19 +56,28 @@ public class charactercontrool : MonoBehaviour
                 if (StartTouchP.y > EndToushP.y)
                     SlideAllowed = true;
             }
-
+            if(SlideAllowed == true || jumpAllowed == true)
+                period = -0.64f;
+            else if (period >= 0.36f)
+            {
+                period = 0f;
+                FindObjectOfType<AudioManager>().PlaySound("run");
+            }
         }
     }
-
     private void FixedUpdate()
     {
-
         Actions();
     }
     private void Actions()
     {
+        
         if (jumpAllowed && issaad == false)
         {
+            if (characterSelect < 2)
+                FindObjectOfType<AudioManager>().PlaySound("man jump");
+            else
+                FindObjectOfType<AudioManager>().PlaySound("femal jump");
             thisrigid.AddForce(Vector3.up * jumpforce);
             GetComponent<Animator>().SetBool("isJumping", true);
             GetComponent<Animator>().SetBool("isRuning", false);
@@ -70,12 +86,12 @@ public class charactercontrool : MonoBehaviour
         }
         if (SlideAllowed && issaad == false)
         {
+            FindObjectOfType<AudioManager>().PlaySound("slide");
             GetComponent<Animator>().SetBool("isSliding", true);
             GetComponent<Animator>().SetBool("isRuning", false);
             StartCoroutine(passiveMe());
             SlideAllowed = false;
         }
-       
     }
     IEnumerator passiveMe()
     {

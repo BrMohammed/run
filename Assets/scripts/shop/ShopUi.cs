@@ -45,8 +45,10 @@ namespace ShopSystem
 
         private void NextBtnMeth()
         {
+            
             if (curentIndex < ShopDataUI.ShopItems.Length - 1)
             {
+                FindObjectOfType<AudioManager>().PlaySound("click");
                 Characters[curentIndex].SetActive(false);
                 curentIndex++;
                 Characters[curentIndex].SetActive(true);
@@ -65,6 +67,7 @@ namespace ShopSystem
         {
             if (curentIndex > 0)
             {
+                FindObjectOfType<AudioManager>().PlaySound("click");
                 Characters[curentIndex].SetActive(false);
                 curentIndex--;
                 Characters[curentIndex].SetActive(true);
@@ -80,6 +83,7 @@ namespace ShopSystem
         }
         private void SelectBtnMeth()
         {
+            FindObjectOfType<AudioManager>().PlaySound("click");
             bool yes_is_selected = false;
             if(ShopDataUI.ShopItems[curentIndex].isUnlocked == true)
                 yes_is_selected = true;
@@ -105,16 +109,19 @@ namespace ShopSystem
         }
         public void GoHme()
         {
+            FindObjectOfType<AudioManager>().PlaySound("click");
             SceneManager.LoadSceneAsync(1);
         }
         public void MAp()
         {
+            FindObjectOfType<AudioManager>().PlaySound("click");
             MapObj.SetActive(true);
             CharCanvObj.SetActive(false);
             CharactersObj.SetActive(false);
         }
         public void characters()
         {
+            FindObjectOfType<AudioManager>().PlaySound("click");
             MapObj.SetActive(false);
             CharCanvObj.SetActive(true);
             CharactersObj.SetActive(true);

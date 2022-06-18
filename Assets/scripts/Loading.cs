@@ -26,6 +26,7 @@ public class Loading : MonoBehaviour
 
 	void StartGame ()
 	{
+		FindObjectOfType<AudioManager>().PlaySound("background");
 		SceneManager.LoadSceneAsync (1);
 	}
 
@@ -42,6 +43,7 @@ public class Loading : MonoBehaviour
 	//Popup events
 	public void OnUserClickAccept ()
 	{
+		FindObjectOfType<AudioManager>().PlaySound("click");
 		SimpelDb.update(2.ToString(), "npa");
 		//hide gdpr popup
 		GDPR_Popup.SetActive (false);
@@ -51,6 +53,7 @@ public class Loading : MonoBehaviour
 
 	public void OnUserClickCancel ()
 	{
+		FindObjectOfType<AudioManager>().PlaySound("cancel");
 		//hide gdpr popup
 		GDPR_Popup.SetActive (false);
 		//play the game
@@ -59,6 +62,7 @@ public class Loading : MonoBehaviour
 
 	public void OnUserClickPrivacyPolicy ()
 	{
+		FindObjectOfType<AudioManager>().PlaySound("click");
 		Application.OpenURL ("https://www.google.com/"); //your privacy url
 	}
 
