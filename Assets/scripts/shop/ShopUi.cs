@@ -41,23 +41,23 @@ namespace ShopSystem
         {
             if (bool.Parse(SimpelDb.read("Sound")) == true)
             {
-                SounOffObj.SetActive(true);
-                SoundOnObj.SetActive(false);
-            }
-            else
-            {
                 SounOffObj.SetActive(false);
                 SoundOnObj.SetActive(true);
             }
-            if (bool.Parse(SimpelDb.read("Music")) == true)
-            {
-                MusicOffObj.SetActive(true);
-                MusicOnObj.SetActive(false);
-            }
             else
+            {
+                SounOffObj.SetActive(true);
+                SoundOnObj.SetActive(false);
+            }
+            if (bool.Parse(SimpelDb.read("Music")) == true)
             {
                 MusicOffObj.SetActive(false);
                 MusicOnObj.SetActive(true);
+            }
+            else
+            {
+                MusicOffObj.SetActive(true);
+                MusicOnObj.SetActive(false);
             }
         }
         private void setinfo()
@@ -163,37 +163,38 @@ namespace ShopSystem
         public void SoundOn()
         {
             M_Sound();
+            FindObjectOfType<AudioManager>().PlaySound("click");
             SimpelDb.update(1.ToString(), "Sound");
-            SounOffObj.SetActive(true);
-            SoundOnObj.SetActive(false);
+            SounOffObj.SetActive(false);
+            SoundOnObj.SetActive(true);
 
         }
         public void SoundOff()
         {
             M_Sound();
             SimpelDb.update(0.ToString(), "Sound");
-            SounOffObj.SetActive(false);
-            SoundOnObj.SetActive(true);
+            SounOffObj.SetActive(true);
+            SoundOnObj.SetActive(false);
         }
         public void MusicOn()
         {
             M_Music();
+            FindObjectOfType<AudioManager>().PlaySound("click");
             SimpelDb.update(1.ToString(), "Music");
-            MusicOffObj.SetActive(true);
-            MusicOnObj.SetActive(false);
+            MusicOffObj.SetActive(false);
+            MusicOnObj.SetActive(true);
 
         }
         public void MusicOff()
         {
             M_Music();
-            SimpelDb.update(1.ToString(), "Music");
-            MusicOffObj.SetActive(false);
-            MusicOnObj.SetActive(true);
+            SimpelDb.update(0.ToString(), "Music");
+            MusicOffObj.SetActive(true);
+            MusicOnObj.SetActive(false);
         }
 
         public void M_Sound()
         {
-            FindObjectOfType<AudioManager>().PlaySound("click");
             FindObjectOfType<AudioManager>().MuteSound("cancel");
             FindObjectOfType<AudioManager>().MuteSound("loos");
             FindObjectOfType<AudioManager>().MuteSound("femal jump");
@@ -205,7 +206,6 @@ namespace ShopSystem
         }
         public void M_Music()
         {
-            FindObjectOfType<AudioManager>().PlaySound("click");
             FindObjectOfType<AudioManager>().MuteSound("background");
         }
     }

@@ -7,8 +7,6 @@ public class Loading : MonoBehaviour
 {
 	[SerializeField] [Range(2f,8f)] float loadingDelay = 2f;
 	[SerializeField]  GameObject GDPR_Popup;
-	//static int npa = 1;
-	ShopUi shopUi = new ShopUi();
 	void OnEnable()
 	{
 		Debug.Log(Application.persistentDataPath);
@@ -29,12 +27,9 @@ public class Loading : MonoBehaviour
 	{
 
 		if (bool.Parse(SimpelDb.read("Sound")) == false)
-        {
-			Debug.Log("hi");
-			shopUi.M_Sound();
-        }
+			M_Sound();
 		if (bool.Parse(SimpelDb.read("Music")) == false)
-			shopUi.M_Music();
+			M_Music();
 		FindObjectOfType<AudioManager>().PlaySound("background");
 		SceneManager.LoadSceneAsync (1);
 	}
@@ -73,6 +68,22 @@ public class Loading : MonoBehaviour
 	{
 		FindObjectOfType<AudioManager>().PlaySound("click");
 		Application.OpenURL ("https://www.google.com/"); //your privacy url
+	}
+
+	public void M_Sound()
+	{
+		FindObjectOfType<AudioManager>().MuteSound("cancel");
+		FindObjectOfType<AudioManager>().MuteSound("loos");
+		FindObjectOfType<AudioManager>().MuteSound("femal jump");
+		FindObjectOfType<AudioManager>().MuteSound("man jump");
+		FindObjectOfType<AudioManager>().MuteSound("run");
+		FindObjectOfType<AudioManager>().MuteSound("coin");
+		FindObjectOfType<AudioManager>().MuteSound("slide");
+		FindObjectOfType<AudioManager>().MuteSound("click");
+	}
+	public void M_Music()
+	{
+		FindObjectOfType<AudioManager>().MuteSound("background");
 	}
 
 }

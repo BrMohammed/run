@@ -3916,10 +3916,10 @@ MonoBehaviour:
   CharCanvObj: {fileID: 1074780605}
   CharactersObj: {fileID: 537572579}
   SoundObj: {fileID: 406501100}
-  SoundOnObj: {fileID: 98404410}
-  SounOffObj: {fileID: 148446186}
-  MusicOnObj: {fileID: 887202821}
-  MusicOffObj: {fileID: 418165752}
+  SoundOnObj: {fileID: 148446186}
+  SounOffObj: {fileID: 98404410}
+  MusicOnObj: {fileID: 418165752}
+  MusicOffObj: {fileID: 887202821}
 --- !u!114 &2071313327
 MonoBehaviour:
   m_ObjectHideFlags: 0
