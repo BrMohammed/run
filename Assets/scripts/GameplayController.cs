@@ -86,17 +86,26 @@ public class GameplayController : MonoBehaviour
     public void pauseThegame()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        UiAnimation.butten_haver(pausebutten);
+        Time.timeScale = 0f;
         pausePanal.SetActive(true);
         UiAnimation.PausePaneleEAffects(resumeicoobj, homeicoobj, returnicoobj);
-        Time.timeScale = 0f;
     }
     public void RusumeThegame()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        UiAnimation.butten_haver(resumeicoobj);
+        UiAnimation.closePausePaneleEAffects(resumeicoobj, homeicoobj, returnicoobj);
+        StartCoroutine(RusumeThegame_Deley());
+    }
+
+    IEnumerator RusumeThegame_Deley()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
         Time.timeScale = 1f;
         pausePanal.SetActive(false);
-
     }
+
     public void menuhome()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
