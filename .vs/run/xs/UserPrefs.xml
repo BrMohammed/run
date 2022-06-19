@@ -1,28 +1,21 @@
-﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/UiAnimation.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/UiAnimeShop.cs">
     <Files>
       <File FileName="Assets/scripts/GameplayController.cs" Line="10" Column="46" />
-      <File FileName="Assets/scripts/shop/SaveLodeData.cs" />
-      <File FileName="Assets/scripts/charactercontrool.cs" />
-      <File FileName="Assets/scripts/shop/ShopUi.cs" Line="175" Column="30" />
-      <File FileName="Assets/scripts/Loading.cs" />
-      <File FileName="Assets/scripts/Audio/AudioManager.cs" />
-      <File FileName="Assets/scripts/Audio/Sound.cs" />
-      <File FileName="Assets/scripts/shop/ShopMapData.cs" />
-      <File FileName="Assets/scripts/SimpelDb.cs" />
-      <File FileName="Assets/scripts/shop/ShopMapUi.cs" />
-      <File FileName="Assets/scripts/shop/ShopData.cs" />
-      <File FileName="Assets/scripts/Enable_Scripts.cs" />
+      <File FileName="Assets/scripts/shop/ShopUi.cs" Line="169" Column="44" />
       <File FileName="Assets/scripts/UiAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/UiAnimeShop.cs" Line="18" Column="55" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="run" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
-              <Node name="scripts" expanded="True">
-                <Node name="Audio" expanded="True" />
-                <Node name="shop" expanded="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="scripts" expanded="True">
+                  <Node name="shop" expanded="True" />
+                  <Node name="UiAnimeShop.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -33,7 +26,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2ccf707f-e3cb-4571-9ee3-6df5c211d8c9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="163d09e8-e1be-4ecc-af15-cc7c9d418e7d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

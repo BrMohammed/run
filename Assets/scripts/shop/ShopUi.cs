@@ -158,7 +158,15 @@ namespace ShopSystem
         public void Sound()
         {
             FindObjectOfType<AudioManager>().PlaySound("click");
-            SoundObj.active = !SoundObj.active;
+            if (SoundObj.activeSelf)
+                StartCoroutine(deley());
+            else
+                SoundObj.SetActive(true);
+        }
+        IEnumerator deley()
+        {
+            yield return new WaitForSeconds(0.3f);
+            SoundObj.SetActive(false);
         }
         public void SoundOn()
         {
