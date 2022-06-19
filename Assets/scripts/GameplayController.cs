@@ -138,13 +138,22 @@ public class GameplayController : MonoBehaviour
     public void Beginthegame()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        StartCoroutine(delay());
+        //destancepanel.SetActive(true);
+        //pausebutten.SetActive(true);
+        //menupanal.SetActive(false);
+        //Enable_Scripts.enable_scripte();
+        //loop_of_return_canva.loop_berig_script = false;
+    }
+    IEnumerator delay()
+    {
+        yield return new WaitForSeconds(1f);
         destancepanel.SetActive(true);
         pausebutten.SetActive(true);
         menupanal.SetActive(false);
         Enable_Scripts.enable_scripte();
         loop_of_return_canva.loop_berig_script = false;
     }
-
 
     public void Shop()
     {

@@ -1,0 +1,428 @@
+/target:library
+/out:"Temp/Assembly-CSharp.dll"
+/nowarn:0169
+/nowarn:0649
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/Managed/UnityEditor.dll"
+/reference:"Library/ScriptAssemblies/Unity.Timeline.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.Monetization.dll"
+/reference:"Library/ScriptAssemblies/Unity.VSCode.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll"
+/reference:"Library/ScriptAssemblies/Purchasing.Common.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.Advertisements.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.Purchasing.dll"
+/reference:"Library/ScriptAssemblies/UnityEditor.Purchasing.dll"
+/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
+/reference:"Library/ScriptAssemblies/Unity.Timeline.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll"
+/reference:"Library/ScriptAssemblies/Unity.Rider.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll"
+/reference:"Library/ScriptAssemblies/Analytics.dll"
+/reference:"Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll"
+/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.dll"
+/reference:"Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll"
+/reference:"Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll"
+/reference:"Library/ScriptAssemblies/UnityEditor.UI.dll"
+/reference:"Assets/Plugins/Google.MiniJson.dll"
+/reference:"Assets/Plugins/Mono.Data.Sqlite.dll"
+/reference:"/goinfre/brmohamm/run/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll"
+/reference:"/goinfre/brmohamm/run/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll"
+/reference:"/goinfre/brmohamm/run/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.dll"
+/reference:"/goinfre/brmohamm/2019.4.35f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
+/define:UNITY_2019_4_35
+/define:UNITY_2019_4
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2019_4_OR_NEWER
+/define:UNITY_INCLUDE_TESTS
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:ENABLE_RUNTIME_PERMISSIONS
+/define:ENABLE_ENGINE_CODE_STRIPPING
+/define:ENABLE_ONSCREEN_KEYBOARD
+/define:INCLUDE_DYNAMIC_GI
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:PLATFORM_SUPPORTS_MONO
+/define:ENABLE_VIDEO
+/define:PLATFORM_ANDROID
+/define:UNITY_ANDROID
+/define:UNITY_ANDROID_API
+/define:ENABLE_EGL
+/define:ENABLE_NETWORK
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:PLATFORM_SUPPORTS_ADS_ID
+/define:UNITY_CAN_SHOW_SPLASH_SCREEN
+/define:UNITY_HAS_GOOGLEVR
+/define:UNITY_HAS_TANGO
+/define:ENABLE_SPATIALTRACKING
+/define:UNITY_ASTC_ONLY_DECOMPRESS
+/define:ENABLE_UNITYADS_RUNTIME
+/define:UNITY_UNITYADS_API
+/define:ENABLE_MONO
+/define:NET_STANDARD_2_0
+/define:ENABLE_PROFILER
+/define:DEBUG
+/define:TRACE
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_OSX
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_BURST_AOT
+/define:UNITY_TEAM_LICENSE
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+"Assets/LeanTween/Examples/Archived/OldGUIExamplesCS.cs"
+"Assets/LeanTween/Examples/Archived/TestingPunch.cs"
+"Assets/LeanTween/Examples/Archived/TestingRigidbodyCS.cs"
+"Assets/LeanTween/Examples/Scripts/Following.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralBasic.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralEasingTypes.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs"
+"Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs"
+"Assets/LeanTween/Examples/Scripts/LogoCinematic.cs"
+"Assets/LeanTween/Examples/Scripts/PathBezier.cs"
+"Assets/LeanTween/Examples/Scripts/PathBezier2d.cs"
+"Assets/LeanTween/Examples/Scripts/PathSpline.cs"
+"Assets/LeanTween/Examples/Scripts/PathSpline2d.cs"
+"Assets/LeanTween/Examples/Scripts/PathSplineEndless.cs"
+"Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs"
+"Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs"
+"Assets/LeanTween/Examples/Scripts/PathSplines.cs"
+"Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs"
+"Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs"
+"Assets/LeanTween/Examples/Scripts/TestingZLegacyExt.cs"
+"Assets/LeanTween/Framework/LTDescr.cs"
+"Assets/LeanTween/Framework/LTDescrOptional.cs"
+"Assets/LeanTween/Framework/LTSeq.cs"
+"Assets/LeanTween/Framework/LeanAudio.cs"
+"Assets/LeanTween/Framework/LeanSmooth.cs"
+"Assets/LeanTween/Framework/LeanTest.cs"
+"Assets/LeanTween/Framework/LeanTween.cs"
+"Assets/LeanTween/Framework/LeanTweenExt.cs"
+"Assets/Props Animations/Scripts/CharacterMovementController.cs"
+"Assets/Props Animations/Scripts/DetectionTrigger.cs"
+"Assets/Props Animations/Scripts/GUIScript.cs"
+"Assets/Props Animations/Scripts/General/CameraBumper.cs"
+"Assets/Props Animations/Scripts/General/CameraControl.cs"
+"Assets/Props Animations/Scripts/General/LimitedFloat.cs"
+"Assets/Props Animations/Scripts/IKScript.cs"
+"Assets/Props Animations/Scripts/LayerMaskExampleScript.cs"
+"Assets/Props Animations/Scripts/PropsUnityObject.cs"
+"Assets/Props Animations/Scripts/RollerBladeScript.cs"
+"Assets/Props Animations/Scripts/SmoothCameraAdvanced.cs"
+"Assets/RealToon/Examples/Model/UnityChan/Scripts/CameraController.cs"
+"Assets/RealToon/Examples/Model/UnityChan/Scripts/FaceUpdate.cs"
+"Assets/RealToon/Examples/Model/UnityChan/Scripts/IdleChanger.cs"
+"Assets/RealToon/Examples/Model/UnityChan/Scripts/SceneLoader.cs"
+"Assets/RealToon/Examples/Model/UnityChan/Scripts/ThirdPersonCamera.cs"
+"Assets/RealToon/Examples/Model/UnityChan/Scripts/UnityChanControlScriptWithRgidBody.cs"
+"Assets/RealToon/RealToon Shaders/Effects/Sobel Outline/RealToonSobelOutline.cs"
+"Assets/RealToon/RealToon Tools/CustomShadowResolution.cs"
+"Assets/RealToon/RealToon Tools/FrameByFrameRendering/FrameByFrameRendering_Default.cs"
+"Assets/RealToon/RealToon Tools/FrameByFrameRendering/FrameByFrameRendering_Manual.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/EnvMapAnimator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/SimpleScript.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/SkewTextExample.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextInfoDebugTool.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
+"Assets/scripts/Audio/AudioManager.cs"
+"Assets/scripts/Audio/Sound.cs"
+"Assets/scripts/CristalMove.cs"
+"Assets/scripts/Enable_Scripts.cs"
+"Assets/scripts/GameplayController.cs"
+"Assets/scripts/HighscoreController.cs"
+"Assets/scripts/Loading.cs"
+"Assets/scripts/SimpelDb.cs"
+"Assets/scripts/Suegullmove.cs"
+"Assets/scripts/UiAnimation.cs"
+"Assets/scripts/baratatch.cs"
+"Assets/scripts/camerafol.cs"
+"Assets/scripts/charactercontrool.cs"
+"Assets/scripts/destroydroad.cs"
+"Assets/scripts/dont_destroy.cs"
+"Assets/scripts/loop_of_return_canva.cs"
+"Assets/scripts/menucontroler.cs"
+"Assets/scripts/readtrigger.cs"
+"Assets/scripts/shop/SaveLodeData.cs"
+"Assets/scripts/shop/ShopData.cs"
+"Assets/scripts/shop/ShopMapData.cs"
+"Assets/scripts/shop/ShopMapUi.cs"
+"Assets/scripts/shop/ShopUi.cs"
+"Assets/scripts/speed.cs"
