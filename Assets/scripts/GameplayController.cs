@@ -11,7 +11,8 @@ public class GameplayController : MonoBehaviour
     
     [SerializeField] private Text distancescore,gameoverscoretext, highscore, totalcoinGameover,totalcoinMenu;
     [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten, 
-                                                resumeicoobj, homeicoobj, returnicoobj;
+                                                resumeicoobj, homeicoobj, returnicoobj,
+                                            Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj;
     [Header("characters")]
     [SerializeField] private GameObject[] Characters;
     [SerializeField] private GameObject[] Maps;
@@ -109,9 +110,14 @@ public class GameplayController : MonoBehaviour
     public void menuhome()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+        StartCoroutine(deley_menuhome());
+    }
+    IEnumerator deley_menuhome()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
         Time.timeScale = 1f;
         SceneManager.LoadScene("menu", LoadSceneMode.Single);
-
     }
     //////////////////////////////////////////Game over//////////////////////////////
     public void gameover()
@@ -129,6 +135,7 @@ public class GameplayController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         gameoverpanal.SetActive(true);
+        UiAnimation.gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
         gameoverscoretext.text = destanceunite.ToString();
         highscore.text = SimpelDb.read("score");
         destancepanel.SetActive(false);
@@ -140,11 +147,17 @@ public class GameplayController : MonoBehaviour
     public void returnegame()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+        StartCoroutine(deley_returnegame());
+    }
+
+    IEnumerator deley_returnegame()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         loop_of_return_canva.loop_berig_script = true;
     }
-
 
     public void Beginthegame()
     {

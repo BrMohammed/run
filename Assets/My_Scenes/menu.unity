@@ -301,6 +301,11 @@ MonoBehaviour:
   resumeicoobj: {fileID: 1285921699}
   homeicoobj: {fileID: 297733753}
   returnicoobj: {fileID: 2063845896}
+  Gogameovericoobj: {fileID: 889244661}
+  Gohighscoreicoobj: {fileID: 806393657}
+  Goscoreicoobj: {fileID: 1891376159}
+  Gohomeicoobj: {fileID: 517455462}
+  Goretrygameicoobj: {fileID: 621829389}
   Characters:
   - {fileID: 679520778}
   - {fileID: 2140637208}
