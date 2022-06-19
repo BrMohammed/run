@@ -154,6 +154,9 @@ MonoBehaviour:
   paramobj: {fileID: 1371958947}
   sharobj: {fileID: 1929309514}
   likeobj: {fileID: 1205311913}
+  resumeicoobj: {fileID: 1285921699}
+  homeicoobj: {fileID: 297733753}
+  returnicoobj: {fileID: 2063845896}
 --- !u!4 &193659830
 Transform:
   m_ObjectHideFlags: 0
@@ -298,6 +301,10 @@ MonoBehaviour:
   destancepanel: {fileID: 1484077116}
   menupanal: {fileID: 1405181769}
   pausebutten: {fileID: 2142092544}
+  resumeicoobj: {fileID: 1285921699}
+  homeicoobj: {fileID: 297733753}
+  returnicoobj: {fileID: 2063845896}
+  UiAnimation: {fileID: 193659828}
   Characters:
   - {fileID: 679520778}
   - {fileID: 2140637208}
@@ -3964,6 +3971,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 229167718}
         m_MethodName: Shop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 193659829}
+        m_MethodName: close
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

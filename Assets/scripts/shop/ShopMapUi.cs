@@ -43,6 +43,7 @@ namespace ShopSystem
 
         private void NextBtnMeth()
         {
+            UiAnimeShop.butten_haver(Next.gameObject);
             SoundObj.SetActive(false);
             if (curentIndex < ShopMapDataUI.ShopItems.Length - 1)
             {
@@ -64,6 +65,7 @@ namespace ShopSystem
 
         private void PrevBtnMeth()
         {
+            UiAnimeShop.butten_haver(Prev.gameObject);
             SoundObj.SetActive(false);
             if (curentIndex > 0)
             {
@@ -84,6 +86,7 @@ namespace ShopSystem
         }
         private void SelectBtnMeth()
         {
+            UiAnimeShop.butten_haver(Select.gameObject);
             SoundObj.SetActive(false);
             FindObjectOfType<AudioManager>().PlaySound("click");
             bool yes_is_selected = false;

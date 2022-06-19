@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.1449934, g: 0.091749586, b: 0.022641473, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3238,8 +3238,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: pauseThegame
+      - m_Target: {fileID: 1620808725}
+        m_MethodName: butten_haver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3975,6 +3975,10 @@ MonoBehaviour:
   SounOffObj: {fileID: 98404410}
   MusicOnObj: {fileID: 418165752}
   MusicOffObj: {fileID: 887202821}
+  homeiconobj: {fileID: 135572663}
+  charicoobj: {fileID: 2092755775}
+  mapicoobj: {fileID: 1000586272}
+  SoundicoObj: {fileID: 388494255}
 --- !u!114 &2071313327
 MonoBehaviour:
   m_ObjectHideFlags: 0

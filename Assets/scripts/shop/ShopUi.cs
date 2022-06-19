@@ -16,7 +16,8 @@ namespace ShopSystem
         private int curentIndex = 0;
         private int SelectedIndex = 0;
         public SaveLodeData saveLodeData;
-        public GameObject MapObj, CharCanvObj, CharactersObj, SoundObj, SoundOnObj, SounOffObj, MusicOnObj, MusicOffObj;
+        public GameObject MapObj, CharCanvObj, CharactersObj, SoundObj, SoundOnObj, SounOffObj, MusicOnObj, MusicOffObj,
+                                    homeiconobj, charicoobj, mapicoobj, SoundicoObj;
         private int MapsSelect;
         private static bool button = false;
 
@@ -70,6 +71,7 @@ namespace ShopSystem
 
         private void NextBtnMeth()
         {
+            UiAnimeShop.butten_haver(Next.gameObject);
             SoundObj.SetActive(false);
             if (curentIndex < ShopDataUI.ShopItems.Length - 1)
             {
@@ -91,6 +93,7 @@ namespace ShopSystem
         private void PrevBtnMeth()
         {
             SoundObj.SetActive(false);
+            UiAnimeShop.butten_haver(Prev.gameObject);
             if (curentIndex > 0)
             {
                 FindObjectOfType<AudioManager>().PlaySound("click");
@@ -109,6 +112,7 @@ namespace ShopSystem
         }
         private void SelectBtnMeth()
         {
+            UiAnimeShop.butten_haver(Select.gameObject);
             FindObjectOfType<AudioManager>().PlaySound("click");
             SoundObj.SetActive(false);
             bool yes_is_selected = false;
@@ -136,11 +140,13 @@ namespace ShopSystem
         }
         public void GoHme()
         {
+            UiAnimeShop.butten_haver(homeiconobj.gameObject);
             FindObjectOfType<AudioManager>().PlaySound("click");
             SceneManager.LoadSceneAsync(1);
         }
         public void MAp()
         {
+            UiAnimeShop.butten_haver(mapicoobj.gameObject);
             FindObjectOfType<AudioManager>().PlaySound("click");
             MapObj.SetActive(true);
             CharCanvObj.SetActive(false);
@@ -149,6 +155,7 @@ namespace ShopSystem
         }
         public void characters()
         {
+            UiAnimeShop.butten_haver(charicoobj.gameObject);
             FindObjectOfType<AudioManager>().PlaySound("click");
             MapObj.SetActive(false);
             CharCanvObj.SetActive(true);
@@ -157,6 +164,7 @@ namespace ShopSystem
         }
         public void Sound()
         {
+            UiAnimeShop.butten_haver(SoundicoObj.gameObject);
             FindObjectOfType<AudioManager>().PlaySound("click");
             if (SoundObj.activeSelf)
                 StartCoroutine(deley());

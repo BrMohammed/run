@@ -10,7 +10,8 @@ public class GameplayController : MonoBehaviour
     public static GameplayController instance;
     
     [SerializeField] private Text distancescore,gameoverscoretext, highscore, totalcoinGameover,totalcoinMenu;
-    [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten;
+    [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten, 
+                                                resumeicoobj, homeicoobj, returnicoobj;
     [Header("characters")]
     [SerializeField] private GameObject[] Characters;
     [SerializeField] private GameObject[] Maps;
@@ -85,8 +86,9 @@ public class GameplayController : MonoBehaviour
     public void pauseThegame()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
-        Time.timeScale = 0f;
         pausePanal.SetActive(true);
+        UiAnimation.PausePaneleEAffects(resumeicoobj, homeicoobj, returnicoobj);
+        Time.timeScale = 0f;
     }
     public void RusumeThegame()
     {
@@ -139,15 +141,10 @@ public class GameplayController : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
         StartCoroutine(delay());
-        //destancepanel.SetActive(true);
-        //pausebutten.SetActive(true);
-        //menupanal.SetActive(false);
-        //Enable_Scripts.enable_scripte();
-        //loop_of_return_canva.loop_berig_script = false;
     }
     IEnumerator delay()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         destancepanel.SetActive(true);
         pausebutten.SetActive(true);
         menupanal.SetActive(false);
@@ -158,6 +155,12 @@ public class GameplayController : MonoBehaviour
     public void Shop()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        StartCoroutine(delay2());
+      
+    }
+    IEnumerator delay2()
+    {
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadSceneAsync(2);
     }
 }
