@@ -24,6 +24,7 @@ namespace ShopSystem
         void Start()
         {
             SoinAndMusicFromDb();
+            UiAnimeShop.ui.betwen_scines();
             Shopcoin = int.Parse(SimpelDb.read("TotalCoin"));
             saveLodeData.Initialized();
             SelectedIndex = ShopDataUI.SelectedIndex;

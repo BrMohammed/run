@@ -1,14 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UiAnimation : MonoBehaviour
 {
 
     [SerializeField]
-    GameObject startobj, paramobj, sharobj, likeobj;
+    GameObject startobj, paramobj, sharobj, likeobj, betwin;
+
+    public static UiAnimation ui;
+
     void Start()
     {
+        ui = this;
         LeanTween.scale(startobj, new Vector3(1.767763f, 9.080779f, 1.874742f), 1f).setDelay(0.1f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(sharobj, new Vector3(0.8221743f, 4.358987f, 0.8221743f), 1f).setDelay(0.2f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(paramobj, new Vector3(0.8221743f, 4.358987f, 0.8221743f), 1f).setDelay(0.3f).setEase(LeanTweenType.easeOutElastic);
@@ -69,5 +74,16 @@ public class UiAnimation : MonoBehaviour
         LeanTween.scale(Goscoreicoobj, new Vector3(0, 0, 0), 0.5f).setDelay(0.4f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(Gohomeicoobj, new Vector3(0, 0, 0), 0.5f).setDelay(0.5f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(Goretrygameicoobj, new Vector3(0, 0, 0), 0.5f).setDelay(0.5f).setEase(LeanTweenType.easeOutElastic);
+    }
+
+    public void betwen_scines()
+    {
+        Image r = betwin.GetComponent<Image>();
+        LeanTween.value(betwin, 0, 1, 0.2f).setOnUpdate((float val) =>
+        {
+            Color c = r.color;
+            c.a = val;
+            r.color = c;
+        }).setEase(LeanTweenType.easeInCirc);
     }
 }

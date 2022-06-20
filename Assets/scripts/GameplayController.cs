@@ -27,6 +27,8 @@ public class GameplayController : MonoBehaviour
     private GameObject playermove;
     private Vector3 playerrespawn;
     private bool loos = false;
+
+    int in_gameover = 0;
     private void Awake()
     {
         string shopDataString = SimpelDb.read("SaveDataShop");
@@ -110,7 +112,13 @@ public class GameplayController : MonoBehaviour
     public void menuhome()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
-        UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+        if (in_gameover == 1)
+        {
+            UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+            in_gameover = 0;
+        }
+        else
+            UiAnimation.closePausePaneleEAffects(resumeicoobj, homeicoobj, returnicoobj);
         StartCoroutine(deley_menuhome());
     }
     IEnumerator deley_menuhome()
@@ -122,7 +130,8 @@ public class GameplayController : MonoBehaviour
     //////////////////////////////////////////Game over//////////////////////////////
     public void gameover()
     {
-        if(loos == false)
+        in_gameover = 1;
+        if (loos == false)
         {
             loos = true;
             FindObjectOfType<AudioManager>().PlaySound("loos");
@@ -147,7 +156,13 @@ public class GameplayController : MonoBehaviour
     public void returnegame()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
-        UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+        if(in_gameover == 1)
+        {
+            UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+            in_gameover = 0;
+        }
+        else
+            UiAnimation.closePausePaneleEAffects(resumeicoobj, homeicoobj, returnicoobj);
         StartCoroutine(deley_returnegame());
     }
 
@@ -177,12 +192,12 @@ public class GameplayController : MonoBehaviour
     public void Shop()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        UiAnimation.ui.betwen_scines();
         StartCoroutine(delay2());
-      
     }
     IEnumerator delay2()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         SceneManager.LoadSceneAsync(2);
     }
 }
