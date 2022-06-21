@@ -57,11 +57,11 @@ public class GameplayController : MonoBehaviour
         yield return new WaitForEndOfFrame();
         if (loop_of_return_canva.loop_berig_script == true)
         {
+            menupanal.SetActive(false);
             Beginthegame();
         }
         else
             menupanal.SetActive(true);
-        
     }
     
     void makeinstance()
@@ -155,8 +155,8 @@ public class GameplayController : MonoBehaviour
     [Obsolete]
     public void returnegame()
     {
-        FindObjectOfType<AudioManager>().PlaySound("click");
-        if(in_gameover == 1)
+        loop_of_return_canva.loop_berig_script = true;
+        if (in_gameover == 1)
         {
             UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
             in_gameover = 0;
@@ -171,12 +171,12 @@ public class GameplayController : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        loop_of_return_canva.loop_berig_script = true;
     }
 
     public void Beginthegame()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        loop_of_return_canva.loop_berig_script = false;
         StartCoroutine(delay());
     }
     IEnumerator delay()
@@ -184,9 +184,7 @@ public class GameplayController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         destancepanel.SetActive(true);
         pausebutten.SetActive(true);
-        menupanal.SetActive(false);
         Enable_Scripts.enable_scripte();
-        loop_of_return_canva.loop_berig_script = false;
     }
 
     public void Shop()
