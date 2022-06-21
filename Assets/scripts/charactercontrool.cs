@@ -22,13 +22,21 @@ public class charactercontrool : MonoBehaviour
     private bool enter = false;
 
     private float period = 0f;
+    /// 
+    
 
     private int characterSelect;
+
+  //  private ConstantForce gravity;
 
     private void Start()
     {
         speed = 15f;
         acceleration = 0.00002f;
+
+
+        //gravity = gameObject.AddComponent<ConstantForce>();
+        //gravity.force = new Vector3(0.0f, -9.81f, 0.0f);
         thisrigid = GetComponent<Rigidbody>();
         GetComponent<Animator>().SetBool("isRuning", true);
         GetComponent<Animator>().SetBool("isJumping", false);
@@ -41,6 +49,7 @@ public class charactercontrool : MonoBehaviour
 
     private void Update()
     {
+        
         GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed += acceleration * Time.deltaTime);
         period += Time.deltaTime;
         if (issaad == false)
@@ -78,7 +87,7 @@ public class charactercontrool : MonoBehaviour
                 FindObjectOfType<AudioManager>().PlaySound("man jump");
             else
                 FindObjectOfType<AudioManager>().PlaySound("femal jump");
-            thisrigid.AddForce(Vector3.up * jumpforce);
+            Jump();
             GetComponent<Animator>().SetBool("isJumping", true);
             GetComponent<Animator>().SetBool("isRuning", false);
             StartCoroutine(passiveMe());
@@ -102,6 +111,12 @@ public class charactercontrool : MonoBehaviour
             GetComponent<Animator>().SetBool("isSliding", false);
             GetComponent<Animator>().SetBool("isJumping", false);
         }
+    }
+
+
+    void Jump()
+    {
+        thisrigid.AddForce(Vector3.up * jumpforce);
     }
     /////////////////////////////////////////bara tatch/////////////////
 
