@@ -1,14 +1,13 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/loop_of_return_canva.cs">
+﻿<Properties StartupConfiguration="{B75B64CE-5A50-4A86-4EA9-D698B9736114}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameplayController.cs">
     <Files>
-      <File FileName="Assets/scripts/GameplayController.cs" Line="58" Column="33" />
+      <File FileName="Assets/scripts/GameplayController.cs" Line="156" Column="28" />
       <File FileName="Assets/scripts/shop/ShopUi.cs" />
       <File FileName="Assets/scripts/UiAnimeShop.cs" />
       <File FileName="Assets/scripts/shop/ShopMapUi.cs" />
       <File FileName="Assets/scripts/shop/ShopData.cs" />
-      <File FileName="Assets/scripts/Loading.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/charactercontrool.cs" />
-      <File FileName="Assets/scripts/loop_of_return_canva.cs" Line="9" Column="53" />
+      <File FileName="Assets/scripts/loop_of_return_canva.cs" Line="9" Column="2" />
       <File FileName="Assets/scripts/UiAnimation.cs" Line="90" Column="1" NotebookId="1" />
     </Files>
     <Pads>
@@ -19,7 +18,7 @@
               <Node name="Assets" expanded="True">
                 <Node name="scripts" expanded="True">
                   <Node name="shop" expanded="True" />
-                  <Node name="loop_of_return_canva.cs" selected="True" />
+                  <Node name="GameplayController.cs" selected="True" />
                 </Node>
               </Node>
             </Node>

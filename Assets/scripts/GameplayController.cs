@@ -184,6 +184,7 @@ public class GameplayController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         destancepanel.SetActive(true);
         pausebutten.SetActive(true);
+        menupanal.SetActive(false);
         Enable_Scripts.enable_scripte();
     }
 

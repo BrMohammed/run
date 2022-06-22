@@ -23,8 +23,9 @@ public class charactercontrool : MonoBehaviour
 
     private float period = 0f;
     /// 
-    
 
+    public float gravity = 15;
+    public float gravity_delay = 0.3f;
     private int characterSelect;
 
   //  private ConstantForce gravity;
@@ -34,9 +35,6 @@ public class charactercontrool : MonoBehaviour
         speed = 15f;
         acceleration = 0.00002f;
 
-
-        //gravity = gameObject.AddComponent<ConstantForce>();
-        //gravity.force = new Vector3(0.0f, -9.81f, 0.0f);
         thisrigid = GetComponent<Rigidbody>();
         GetComponent<Animator>().SetBool("isRuning", true);
         GetComponent<Animator>().SetBool("isJumping", false);
@@ -117,6 +115,12 @@ public class charactercontrool : MonoBehaviour
     void Jump()
     {
         thisrigid.AddForce(Vector3.up * jumpforce);
+        StartCoroutine(deley_jump());
+    }
+    IEnumerator deley_jump()
+    {
+        yield return new WaitForSeconds(gravity_delay);
+        thisrigid.AddForce(Vector3.down * gravity);
     }
     /////////////////////////////////////////bara tatch/////////////////
 
