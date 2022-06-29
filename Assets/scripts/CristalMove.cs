@@ -7,6 +7,7 @@ public class CristalMove : MonoBehaviour
     private Rigidbody Cristal;
     [SerializeField]private float Speed = 2f;
     [SerializeField] private float Rspeed = 2f;
+    public ParticleSystem explogen;
   
     void Start()
     {
@@ -27,10 +28,12 @@ public class CristalMove : MonoBehaviour
     {
         if (character.gameObject.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().PlaySound("coin");
             int totalcoin = int.Parse(SimpelDb.read("TotalCoin"));
             totalcoin++;
             SimpelDb.update(totalcoin.ToString(), "TotalCoin");
             Debug.Log(totalcoin);
+            Instantiate(explogen, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
