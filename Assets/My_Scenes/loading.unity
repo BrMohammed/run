@@ -1720,7 +1720,19 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: coin
-    clip: {fileID: 8300000, guid: 83c86995310bc4f468d3380727b60112, type: 3}
+    clip: {fileID: 8300000, guid: 8c3c83ad9fc944933a898e672f4a52bc, type: 3}
+    volum: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: click_on
+    clip: {fileID: 8300000, guid: 84e5a7db8464b4eb8bfc278ec76fae76, type: 3}
+    volum: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: click_off
+    clip: {fileID: 8300000, guid: b1a4add4bbedd4ce995a753f35adb79b, type: 3}
     volum: 1
     pitch: 1
     loop: 0

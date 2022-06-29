@@ -180,7 +180,7 @@ namespace ShopSystem
         public void SoundOn()
         {
             M_Sound();
-            FindObjectOfType<AudioManager>().PlaySound("click");
+            FindObjectOfType<AudioManager>().PlaySound("click_on");
             SimpelDb.update(0.ToString(), "Sound");
             SounOffObj.SetActive(false);
             SoundOnObj.SetActive(true);
@@ -190,13 +190,14 @@ namespace ShopSystem
         {
             M_Sound();
             SimpelDb.update(1.ToString(), "Sound");
+            FindObjectOfType<AudioManager>().PlaySound("click_off");
             SounOffObj.SetActive(true);
             SoundOnObj.SetActive(false);
         }
         public void MusicOn()
         {
             M_Music();
-            FindObjectOfType<AudioManager>().PlaySound("click");
+            FindObjectOfType<AudioManager>().PlaySound("click_on");
             SimpelDb.update(0.ToString(), "Music");
             Debug.Log(SimpelDb.read("Music"));
             MusicOffObj.SetActive(false);
@@ -207,7 +208,7 @@ namespace ShopSystem
         {
             M_Music();
             SimpelDb.update(1.ToString(), "Music");
-            Debug.Log(SimpelDb.read("Music"));
+            FindObjectOfType<AudioManager>().PlaySound("click_off");
             MusicOffObj.SetActive(true);
             MusicOnObj.SetActive(false);
         }
