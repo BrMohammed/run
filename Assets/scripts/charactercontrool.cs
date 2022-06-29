@@ -28,6 +28,8 @@ public class charactercontrool : MonoBehaviour
     public float gravity_delay = 0.3f;
     private int characterSelect;
 
+    Vector3 destent_for_cristal;
+
   //  private ConstantForce gravity;
 
     private void Start()
@@ -161,22 +163,25 @@ public class charactercontrool : MonoBehaviour
 
     IEnumerator Bartime()
     {
-        while ( speed != 0 )
+        while (speed != 0)
         {
             if(Random.Range(0, 10) <= 8)
                 Instantiate(baraobj, new Vector3(0, 1.31f, transform.position.z + baradestense), baraobj.rotation);
             else
                 Instantiate(seagull, new Vector3(0.25f, 2.86f, transform.position.z + baradestense), seagull.rotation);
-            yield return new WaitForSeconds(Random.Range(1.2f,2f));
-
+            yield return new WaitForSeconds(Random.Range(1.1f,2f));
+            destent_for_cristal.z = transform.position.z + baradestense;
         }
     }
     IEnumerator CoinTime()
     {
         while (speed != 0)
         {
+            Debug.Log(transform.position.z + baradestense + 20);
+            Debug.Log(destent_for_cristal.z);
+            if (transform.position.z + baradestense + 20 < destent_for_cristal.z || transform.position.z + baradestense + 20 > destent_for_cristal.z)
             Instantiate(cristal, new Vector3(0.30f, 0.6f, transform.position.z + baradestense + Random.Range(50, 90)), cristal.rotation);
-            yield return new WaitForSeconds(Random.Range(8f, 20f));
+            yield return new WaitForSeconds(Random.Range(8f, 15f));
         }
 
     }

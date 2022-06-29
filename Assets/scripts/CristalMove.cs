@@ -6,7 +6,7 @@ public class CristalMove : MonoBehaviour
 {
     private Rigidbody Cristal;
     [SerializeField]private float Speed = 2f;
-    [SerializeField] private float Rspeed = 2f;
+    [SerializeField] private float Rspeed = 2f; //for rotation and move 
     public ParticleSystem explogen;
   
     void Start()

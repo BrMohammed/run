@@ -12,7 +12,7 @@ public class GameplayController : MonoBehaviour
     [SerializeField] private Text distancescore,gameoverscoretext, highscore, totalcoinGameover,totalcoinMenu;
     [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten, 
                                                 resumeicoobj, homeicoobj, returnicoobj,
-                                            Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj;
+                                            Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj,parametericonobj;
     [Header("characters")]
     [SerializeField] private GameObject[] Characters;
     [SerializeField] private GameObject[] Maps;
@@ -192,6 +192,7 @@ public class GameplayController : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
         UiAnimation.ui.betwen_scines();
+        UiAnimation.butten_haver(parametericonobj);
         StartCoroutine(delay2());
     }
     IEnumerator delay2()
