@@ -135,10 +135,11 @@ public class GameplayController : MonoBehaviour
         {
             loos = true;
             FindObjectOfType<AudioManager>().PlaySound("loos");
-        }
-        if (int.Parse(SimpelDb.read("score")) <= destanceunite)
+            if (int.Parse(SimpelDb.read("score")) <= destanceunite)
             SimpelDb.update(destanceunite.ToString(),"score");
         StartCoroutine(waitgameover());
+        }
+       
     }
     IEnumerator waitgameover()
     {

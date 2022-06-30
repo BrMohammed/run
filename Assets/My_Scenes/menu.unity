@@ -3775,7 +3775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8726fa23091444f83456c22f205da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 250
+  jumpforce: 280
   baraobj: {fileID: 3973440032337069741, guid: 7c85a5d3ec007a7499f49992a95f3362, type: 3}
   seagull: {fileID: 6225311499698974542, guid: b15fec2e558d44f8cb6bf71abaa2ebd5, type: 3}
   cristal: {fileID: 5759817341026288153, guid: fe76ff7844fe04010a969361321f6aaa, type: 3}
@@ -5751,7 +5751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8726fa23091444f83456c22f205da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 250
+  jumpforce: 280
   baraobj: {fileID: 3973440032337069741, guid: 7c85a5d3ec007a7499f49992a95f3362, type: 3}
   seagull: {fileID: 6225311499698974542, guid: b15fec2e558d44f8cb6bf71abaa2ebd5, type: 3}
   cristal: {fileID: 5759817341026288153, guid: fe76ff7844fe04010a969361321f6aaa, type: 3}

@@ -148,6 +148,7 @@ public class charactercontrool : MonoBehaviour
             issaad = true;
             speed = 0;
             acceleration = 0;
+            GetComponent<Animator>().SetBool("isSliding", false);
             GetComponent<Animator>().SetTrigger("isdied");
             GameplayController.instance.gameover();
         }
