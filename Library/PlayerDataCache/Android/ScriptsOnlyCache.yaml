@@ -1,6 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - GoogleMobileAds.Editor.GoogleMobileAdsSettings
     Assembly-CSharp.dll:
+    - Admob
     - AudioManager
     - CristalMove
     - Enable_Scripts
@@ -18,8 +21,14 @@ ScriptsOnlyBuild:
     - destroydroad
     - readtrigger
     - speed
+    GoogleMobileAds.Common.dll:
+    - GoogleMobileAds.Common.MobileAdsEventExecutor
+    GoogleMobileAds.Placement.dll:
+    - GoogleMobileAds.Placement.GoogleMobileAdsPlacements
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.DeviceSimulator.Editor.dll:
@@ -33,6 +42,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -50,6 +60,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   sceneClasses:
@@ -91,31 +102,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11716}
+      Script: {instanceID: 13614}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 11922}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 11958}
+      Script: {instanceID: 13856}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 13998}
     - Class: 114
-      Script: {instanceID: 12164}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 12568}
+      Script: {instanceID: 14466}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 14778}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 14892}
     - Class: 114
-      Script: {instanceID: 13982}
+      Script: {instanceID: 15880}
     - Class: 114
-      Script: {instanceID: 14120}
+      Script: {instanceID: 16018}
     - Class: 114
-      Script: {instanceID: 15058}
+      Script: {instanceID: 16956}
     - Class: 114
-      Script: {instanceID: 15874}
+      Script: {instanceID: 17772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -170,37 +181,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11716}
+      Script: {instanceID: 13614}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 13998}
     - Class: 114
-      Script: {instanceID: 12164}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 12834}
+      Script: {instanceID: 14732}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 14892}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 14970}
     - Class: 114
-      Script: {instanceID: 13594}
+      Script: {instanceID: 15492}
     - Class: 114
-      Script: {instanceID: 13982}
+      Script: {instanceID: 15880}
     - Class: 114
-      Script: {instanceID: 14490}
+      Script: {instanceID: 16388}
     - Class: 114
-      Script: {instanceID: 14512}
+      Script: {instanceID: 16410}
     - Class: 114
-      Script: {instanceID: 15058}
+      Script: {instanceID: 16956}
     - Class: 114
-      Script: {instanceID: 15426}
+      Script: {instanceID: 17324}
     - Class: 114
-      Script: {instanceID: 15654}
+      Script: {instanceID: 17552}
     - Class: 114
-      Script: {instanceID: 15868}
+      Script: {instanceID: 17766}
     - Class: 114
-      Script: {instanceID: 15874}
+      Script: {instanceID: 17772}
+    - Class: 114
+      Script: {instanceID: 35348}
+    - Class: 114
+      Script: {instanceID: 35396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -263,41 +278,49 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11716}
+      Script: {instanceID: 13614}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 13998}
     - Class: 114
-      Script: {instanceID: 12164}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 12274}
+      Script: {instanceID: 14172}
     - Class: 114
-      Script: {instanceID: 12568}
+      Script: {instanceID: 14466}
     - Class: 114
-      Script: {instanceID: 12860}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 14892}
     - Class: 114
-      Script: {instanceID: 13812}
+      Script: {instanceID: 15710}
     - Class: 114
-      Script: {instanceID: 13982}
+      Script: {instanceID: 15880}
     - Class: 114
-      Script: {instanceID: 14006}
+      Script: {instanceID: 15904}
     - Class: 114
-      Script: {instanceID: 14698}
+      Script: {instanceID: 15924}
     - Class: 114
-      Script: {instanceID: 14742}
+      Script: {instanceID: 16388}
     - Class: 114
-      Script: {instanceID: 15058}
+      Script: {instanceID: 16596}
     - Class: 114
-      Script: {instanceID: 15456}
+      Script: {instanceID: 16640}
     - Class: 114
-      Script: {instanceID: 15518}
+      Script: {instanceID: 16826}
     - Class: 114
-      Script: {instanceID: 15776}
+      Script: {instanceID: 16956}
     - Class: 114
-      Script: {instanceID: 15874}
+      Script: {instanceID: 17354}
+    - Class: 114
+      Script: {instanceID: 17416}
+    - Class: 114
+      Script: {instanceID: 17674}
+    - Class: 114
+      Script: {instanceID: 17772}
+    - Class: 114
+      Script: {instanceID: 36202}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1399,9 +1422,87 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: be3a6777d52d21b47409269c17729c50
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: BannerAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 522be92e93fc64af7517a8f3fe640182
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: GoogleMobileAdsPlacements
+  - hash:
+      serializedVersion: 2
+      Hash: dac4101169bf92007c0c333d0979a987
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: InterstitialAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 5e89cff8b7412687a057ae1341e37bc7
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: RewardedAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 6efaca0cedc339b24d85bb75266d3612
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: RewardedInterstitialAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: f3b0eec0c1f780b4de30724838cae200
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: 
+    className: TestController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: ButtonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: Countdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: DummyAdBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: GoogleMobileAds.Common
+    className: MobileAdsEventExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.dll
+    namespaceName: _1vxD40oOUsRFcyIsYSdDwOmD5AgA
+    className: _EZUY2sDrZ60wiKIRbwJMVaAWZ5G
+  - hash:
+      serializedVersion: 2
+      Hash: 6fb512c6733e02f441372611e6f94f11
+    assemblyName: Assembly-CSharp-Editor.dll
+    namespaceName: GoogleMobileAds.Editor
+    className: GoogleMobileAdsSettings
+  - hash:
+      serializedVersion: 2
+      Hash: cddd5b95792d9e707faf1a7990857d3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Admob
   platform: 13
   scenePathNames:
   - Assets/My_Scenes/loading.unity
   - Assets/My_Scenes/menu.unity
   - Assets/My_Scenes/Shop.unity
-  playerPath: /Users/brmohamm/Desktop/rn01.apk
+  playerPath: /Users/brmohamm/Desktop/rn03.apk
