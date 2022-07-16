@@ -1,0 +1,37 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/destroydroad.cs">
+    <Files>
+      <File FileName="Assets/scripts/charactercontrool.cs" Line="173" Column="64" />
+      <File FileName="Assets/scripts/GameplayController.cs" Line="30" Column="1" />
+      <File FileName="Assets/scripts/Admob.cs" Line="83" Column="3" />
+      <File FileName="Assets/scripts/Banner_ads.cs" Line="29" Column="23" />
+      <File FileName="Assets/scripts/readtrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/menucontroler.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/loop_of_return_canva.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Enable_Scripts.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/destroydroad.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="run03" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="scripts" expanded="True">
+                  <Node name="charactercontrool.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a54c87ea-a5fe-4e4b-b141-92ebcbbd38e4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

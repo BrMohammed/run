@@ -32,6 +32,7 @@ public class charactercontrool : MonoBehaviour
 
   //  private ConstantForce gravity;
 
+    private int baracount = 0;
     private void Start()
     {
         speed = 15f;
@@ -167,10 +168,21 @@ public class charactercontrool : MonoBehaviour
         while (speed != 0)
         {
             if(Random.Range(0, 10) <= 8)
-                Instantiate(baraobj, new Vector3(0, 1.31f, transform.position.z + baradestense), baraobj.rotation);
+            {
+                Transform newGameObject;
+                baracount++;
+                newGameObject  = Instantiate(baraobj, new Vector3(0, 1.31f, transform.position.z + baradestense), baraobj.rotation);
+                if(baracount % 2 == 0)
+                {
+                    for (var i = newGameObject.transform.childCount - 1; i >= 0; i--)
+                    {
+                        Object.Destroy(newGameObject.transform.GetChild(i).gameObject);
+                    }
+                }
+            }
             else
                 Instantiate(seagull, new Vector3(0.25f, 2.86f, transform.position.z + baradestense), seagull.rotation);
-            yield return new WaitForSeconds(Random.Range(1.1f,2f));
+            yield return new WaitForSeconds(Random.Range(1.3f,3f));
             destent_for_cristal.z = transform.position.z + baradestense;
         }
     }

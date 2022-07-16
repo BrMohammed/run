@@ -566,6 +566,8 @@ MonoBehaviour:
   - {fileID: 3153491854186545801}
   - {fileID: 1195122995152184089}
   gamebegin: 1
+  banner: {fileID: 266560923}
+  bannerm: {fileID: 852789230}
 --- !u!4 &229167719
 Transform:
   m_ObjectHideFlags: 0
@@ -727,6 +729,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &266560923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266560924}
+  - component: {fileID: 266560925}
+  m_Layer: 0
+  m_Name: '_ads_holder '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &266560924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266560923}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -358.33566, y: -736.0376, z: 50.788334}
+  m_LocalScale: {x: 0.49797282, y: 0.49797282, z: 0.49797282}
+  m_Children: []
+  m_Father: {fileID: 1156322376}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &266560925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266560923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5330522c9afb94cc086ab94fce209469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  banner: {fileID: 266560923}
 --- !u!1 &277253631
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,7 +3120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8726fa23091444f83456c22f205da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 250
+  jumpforce: 280
   baraobj: {fileID: 3973440032337069741, guid: 7c85a5d3ec007a7499f49992a95f3362, type: 3}
   seagull: {fileID: 6225311499698974542, guid: b15fec2e558d44f8cb6bf71abaa2ebd5, type: 3}
   cristal: {fileID: 5759817341026288153, guid: fe76ff7844fe04010a969361321f6aaa, type: 3}
@@ -3516,6 +3562,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806393657}
   m_CullTransparentMesh: 0
+--- !u!1 &852789230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 852789232}
+  - component: {fileID: 852789231}
+  m_Layer: 0
+  m_Name: _ads_holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &852789231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852789230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5330522c9afb94cc086ab94fce209469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  banner: {fileID: 852789230}
+--- !u!4 &852789232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852789230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.41117, y: 1.9321468, z: 101.99017}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &889244661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,6 +4118,7 @@ RectTransform:
   - {fileID: 689622507}
   - {fileID: 983610201}
   - {fileID: 187060060}
+  - {fileID: 266560924}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4538,7 +4629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8726fa23091444f83456c22f205da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 280
+  jumpforce: 300
   baraobj: {fileID: 3973440032337069741, guid: 7c85a5d3ec007a7499f49992a95f3362, type: 3}
   seagull: {fileID: 6225311499698974542, guid: b15fec2e558d44f8cb6bf71abaa2ebd5, type: 3}
   cristal: {fileID: 5759817341026288153, guid: fe76ff7844fe04010a969361321f6aaa, type: 3}
@@ -6633,7 +6724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8726fa23091444f83456c22f205da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 280
+  jumpforce: 300
   baraobj: {fileID: 3973440032337069741, guid: 7c85a5d3ec007a7499f49992a95f3362, type: 3}
   seagull: {fileID: 6225311499698974542, guid: b15fec2e558d44f8cb6bf71abaa2ebd5, type: 3}
   cristal: {fileID: 5759817341026288153, guid: fe76ff7844fe04010a969361321f6aaa, type: 3}
@@ -6860,7 +6951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8726fa23091444f83456c22f205da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 250
+  jumpforce: 280
   baraobj: {fileID: 3973440032337069741, guid: 7c85a5d3ec007a7499f49992a95f3362, type: 3}
   seagull: {fileID: 6225311499698974542, guid: b15fec2e558d44f8cb6bf71abaa2ebd5, type: 3}
   cristal: {fileID: 5759817341026288153, guid: fe76ff7844fe04010a969361321f6aaa, type: 3}

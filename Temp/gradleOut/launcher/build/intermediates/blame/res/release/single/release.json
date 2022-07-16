@@ -1,0 +1,222 @@
+[
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-hdpi_app_icon.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-hdpi/app_icon.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable_notification_bg_low.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout-v21_notification_template_custom_big.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable_notification_icon_background.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout_browser_actions_context_menu_page.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/22e208a2ad4a554ab385786e8214f8fb/res/layout/browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-ldpi_ic_launcher_background.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-ldpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-ldpi_ic_launcher_foreground.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-ldpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout-v21_notification_template_icon_group.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xhdpi_app_icon.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xhdpi/app_icon.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-ldpi_app_icon_round.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-ldpi/app_icon_round.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout_notification_template_part_chronometer.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout-v21_notification_action.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xxxhdpi_app_icon.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-v21_notification_action_background.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-anydpi-v26/app_icon.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable_notification_tile_bg.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xhdpi_app_icon_round.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-ldpi_app_icon.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-ldpi/app_icon.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xxhdpi_app_icon_round.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-mdpi_app_icon_round.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-mdpi/app_icon_round.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-mdpi_app_icon.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-mdpi/app_icon.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-anydpi-v26/app_icon_round.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout_custom_dialog.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xxhdpi_app_icon.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xxhdpi/app_icon.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout_notification_template_part_time.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xxxhdpi_app_icon_round.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable_notification_bg.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-hdpi_app_icon_round.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-hdpi/app_icon_round.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout_browser_actions_context_menu_row.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/22e208a2ad4a554ab385786e8214f8fb/res/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/956f933b99f449cdf4d8a7089168a385/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "/goinfre/brmohamm/run03/Temp/gradleOut/launcher/src/main/res/mipmap-hdpi/ic_launcher_background.png"
+    }
+]

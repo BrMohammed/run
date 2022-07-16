@@ -5,11 +5,10 @@ using System;
 using TMPro;
 public class Admob : MonoBehaviour
 {
-	private BannerView adBanner;
 	private UnifiedNativeAd adNative;
 	private bool nativeLoaded = false;
 
-	private string idApp, idBanner, idNative;
+	private string idApp, idNative;
 
 	[SerializeField] GameObject adNativePanel;
 	[SerializeField] RawImage adIcon;
@@ -27,10 +26,7 @@ public class Admob : MonoBehaviour
 	void Start()
 	{
 		//idApp = "ca-app-pub-3940256099942544~3347511713";
-		idBanner = "ca-app-pub-3940256099942544/6300978111";
 		idNative = "ca-app-pub-3940256099942544/2247696110";
-
-		RequestBannerAd();
 		RequestNativeAd();
 	}
 
@@ -62,23 +58,6 @@ public class Admob : MonoBehaviour
 		}
 	}
 
-	#region Banner Methods --------------------------------------------------
-
-	public void RequestBannerAd()
-	{
-		adBanner = new BannerView(idBanner, AdSize.Banner, AdPosition.Bottom);
-		AdRequest request = AdRequestBuild();
-		adBanner.LoadAd(request);
-	}
-
-	public void DestroyBannerAd()
-	{
-		if (adBanner != null)
-			adBanner.Destroy();
-	}
-
-	#endregion
-
 	#region Native Ad Mehods ------------------------------------------------
 
 	private void RequestNativeAd()
@@ -101,10 +80,5 @@ public class Admob : MonoBehaviour
 	AdRequest AdRequestBuild()
 	{
 		return new AdRequest.Builder().Build();
-	}
-
-	void OnDestroy()
-	{
-		DestroyBannerAd();
 	}
 }

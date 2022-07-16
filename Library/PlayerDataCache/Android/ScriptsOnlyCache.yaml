@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Admob
     - AudioManager
+    - Banner_ads
     - CristalMove
     - Enable_Scripts
     - GameplayController
@@ -21,8 +22,6 @@ ScriptsOnlyBuild:
     - destroydroad
     - readtrigger
     - speed
-    GoogleMobileAds.Common.dll:
-    - GoogleMobileAds.Common.MobileAdsEventExecutor
     GoogleMobileAds.Placement.dll:
     - GoogleMobileAds.Placement.GoogleMobileAdsPlacements
     Unity.2D.Tilemap.Editor.dll:
@@ -102,31 +101,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 13614}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 13632}
+      Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 13820}
+      Script: {instanceID: 11958}
     - Class: 114
-      Script: {instanceID: 13856}
+      Script: {instanceID: 11994}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 14062}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 14466}
+      Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 14778}
+      Script: {instanceID: 12936}
     - Class: 114
-      Script: {instanceID: 14892}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 15880}
+      Script: {instanceID: 14048}
     - Class: 114
-      Script: {instanceID: 16018}
+      Script: {instanceID: 14188}
     - Class: 114
-      Script: {instanceID: 16956}
+      Script: {instanceID: 15110}
     - Class: 114
-      Script: {instanceID: 17772}
+      Script: {instanceID: 15142}
+    - Class: 114
+      Script: {instanceID: 15988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -181,41 +182,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 13614}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 13632}
+      Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 14062}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 14732}
+      Script: {instanceID: 12874}
     - Class: 114
-      Script: {instanceID: 14892}
+      Script: {instanceID: 12892}
     - Class: 114
-      Script: {instanceID: 14970}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 15492}
+      Script: {instanceID: 13128}
     - Class: 114
-      Script: {instanceID: 15880}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 16388}
+      Script: {instanceID: 13958}
     - Class: 114
-      Script: {instanceID: 16410}
+      Script: {instanceID: 14048}
     - Class: 114
-      Script: {instanceID: 16956}
+      Script: {instanceID: 14572}
     - Class: 114
-      Script: {instanceID: 17324}
+      Script: {instanceID: 14594}
     - Class: 114
-      Script: {instanceID: 17552}
+      Script: {instanceID: 15142}
     - Class: 114
-      Script: {instanceID: 17766}
+      Script: {instanceID: 15536}
     - Class: 114
-      Script: {instanceID: 17772}
+      Script: {instanceID: 15768}
     - Class: 114
-      Script: {instanceID: 35348}
+      Script: {instanceID: 15982}
     - Class: 114
-      Script: {instanceID: 35396}
+      Script: {instanceID: 15988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -278,49 +279,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 13614}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 13632}
+      Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 14062}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 14172}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 14466}
+      Script: {instanceID: 12312}
     - Class: 114
-      Script: {instanceID: 14758}
+      Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 14892}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 15710}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 15880}
+      Script: {instanceID: 13874}
     - Class: 114
-      Script: {instanceID: 15904}
+      Script: {instanceID: 14048}
     - Class: 114
-      Script: {instanceID: 15924}
+      Script: {instanceID: 14072}
     - Class: 114
-      Script: {instanceID: 16388}
+      Script: {instanceID: 14092}
     - Class: 114
-      Script: {instanceID: 16596}
+      Script: {instanceID: 14572}
     - Class: 114
-      Script: {instanceID: 16640}
+      Script: {instanceID: 14780}
     - Class: 114
-      Script: {instanceID: 16826}
+      Script: {instanceID: 14824}
     - Class: 114
-      Script: {instanceID: 16956}
+      Script: {instanceID: 15010}
     - Class: 114
-      Script: {instanceID: 17354}
+      Script: {instanceID: 15110}
     - Class: 114
-      Script: {instanceID: 17416}
+      Script: {instanceID: 15142}
     - Class: 114
-      Script: {instanceID: 17674}
+      Script: {instanceID: 15566}
     - Class: 114
-      Script: {instanceID: 17772}
+      Script: {instanceID: 15628}
     - Class: 114
-      Script: {instanceID: 36202}
+      Script: {instanceID: 15890}
+    - Class: 114
+      Script: {instanceID: 15988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -524,6 +527,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: cddd5b95792d9e707faf1a7990857d3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Admob
+  - hash:
+      serializedVersion: 2
       Hash: 234d407605354852c48e57df17c9a1c6
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -666,6 +675,42 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GeneralBasic
+  - hash:
+      serializedVersion: 2
+      Hash: be3a6777d52d21b47409269c17729c50
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: BannerAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 522be92e93fc64af7517a8f3fe640182
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: GoogleMobileAdsPlacements
+  - hash:
+      serializedVersion: 2
+      Hash: dac4101169bf92007c0c333d0979a987
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: InterstitialAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 5e89cff8b7412687a057ae1341e37bc7
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: RewardedAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 6efaca0cedc339b24d85bb75266d3612
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: RewardedInterstitialAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: f3b0eec0c1f780b4de30724838cae200
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: 
+    className: TestController
   - hash:
       serializedVersion: 2
       Hash: 24a3d20e331e79d36c6d8cdc9924c088
@@ -878,7 +923,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: df48864097613519ab7bd184e9d74528
+      Hash: ae1953296a751d07679fdc7b83c7e6e8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameplayController
@@ -888,6 +933,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FrameByFrameRendering_Default
+  - hash:
+      serializedVersion: 2
+      Hash: 6fb512c6733e02f441372611e6f94f11
+    assemblyName: Assembly-CSharp-Editor.dll
+    namespaceName: GoogleMobileAds.Editor
+    className: GoogleMobileAdsSettings
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1136,6 +1187,12 @@ ScriptsOnlyBuild:
     className: Benchmark01_UGUI
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Banner_ads
+  - hash:
+      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1164,6 +1221,30 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark04
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: ButtonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: Countdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: DummyAdBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: GoogleMobileAds.Common
+    className: MobileAdsEventExecutor
   - hash:
       serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
@@ -1254,6 +1335,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.Purchasing.Stores.dll
     namespaceName: UnityEngine.Purchasing.Extension
     className: UnityUtil
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.dll
+    namespaceName: _1vxD40oOUsRFcyIsYSdDwOmD5AgA
+    className: _EZUY2sDrZ60wiKIRbwJMVaAWZ5G
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1422,87 +1509,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: be3a6777d52d21b47409269c17729c50
-    assemblyName: GoogleMobileAds.Placement.dll
-    namespaceName: GoogleMobileAds.Placement
-    className: BannerAdGameObject
-  - hash:
-      serializedVersion: 2
-      Hash: 522be92e93fc64af7517a8f3fe640182
-    assemblyName: GoogleMobileAds.Placement.dll
-    namespaceName: GoogleMobileAds.Placement
-    className: GoogleMobileAdsPlacements
-  - hash:
-      serializedVersion: 2
-      Hash: dac4101169bf92007c0c333d0979a987
-    assemblyName: GoogleMobileAds.Placement.dll
-    namespaceName: GoogleMobileAds.Placement
-    className: InterstitialAdGameObject
-  - hash:
-      serializedVersion: 2
-      Hash: 5e89cff8b7412687a057ae1341e37bc7
-    assemblyName: GoogleMobileAds.Placement.dll
-    namespaceName: GoogleMobileAds.Placement
-    className: RewardedAdGameObject
-  - hash:
-      serializedVersion: 2
-      Hash: 6efaca0cedc339b24d85bb75266d3612
-    assemblyName: GoogleMobileAds.Placement.dll
-    namespaceName: GoogleMobileAds.Placement
-    className: RewardedInterstitialAdGameObject
-  - hash:
-      serializedVersion: 2
-      Hash: f3b0eec0c1f780b4de30724838cae200
-    assemblyName: GoogleMobileAds.Placement.dll
-    namespaceName: 
-    className: TestController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.Common.dll
-    namespaceName: 
-    className: ButtonBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.Common.dll
-    namespaceName: 
-    className: Countdown
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.Common.dll
-    namespaceName: 
-    className: DummyAdBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.Common.dll
-    namespaceName: GoogleMobileAds.Common
-    className: MobileAdsEventExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.dll
-    namespaceName: _1vxD40oOUsRFcyIsYSdDwOmD5AgA
-    className: _EZUY2sDrZ60wiKIRbwJMVaAWZ5G
-  - hash:
-      serializedVersion: 2
-      Hash: 6fb512c6733e02f441372611e6f94f11
-    assemblyName: Assembly-CSharp-Editor.dll
-    namespaceName: GoogleMobileAds.Editor
-    className: GoogleMobileAdsSettings
-  - hash:
-      serializedVersion: 2
-      Hash: cddd5b95792d9e707faf1a7990857d3d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Admob
   platform: 13
   scenePathNames:
   - Assets/My_Scenes/loading.unity
   - Assets/My_Scenes/menu.unity
   - Assets/My_Scenes/Shop.unity
-  playerPath: /Users/brmohamm/Desktop/rn03.apk
+  playerPath: /Users/brmohamm/Desktop/rn08.apk
