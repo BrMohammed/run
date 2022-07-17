@@ -29,13 +29,8 @@ public class GameplayController : MonoBehaviour
     private bool loos = false;
 
     int in_gameover = 0;
-
-    public GameObject banner;
-    public GameObject bannerm;
     private void Awake()
     {
-        banner.SetActive(true);
-        bannerm.SetActive(false);
         string shopDataString = SimpelDb.read("SaveDataShop");
         string shopMapDataString = SimpelDb.read("SaveMapDataShop");
         characterSelect = shopDataString.Contains(":") ? int.Parse(shopDataString.Split(':', ',')[1]) : 0;
@@ -105,8 +100,6 @@ public class GameplayController : MonoBehaviour
     //////////////////////////////////////////pause//////////////////////////////
     public void pauseThegame()
     {
-        banner.SetActive(true);
-        bannerm.SetActive(false);
         FindObjectOfType<AudioManager>().PlaySound("click");
         UiAnimation.butten_haver(pausebutten);
         Time.timeScale = 0f;
@@ -115,8 +108,6 @@ public class GameplayController : MonoBehaviour
     }
     public void RusumeThegame()
     {
-        banner.SetActive(false);
-        bannerm.SetActive(true);
         FindObjectOfType<AudioManager> ().PlaySound("click");
         UiAnimation.butten_haver(resumeicoobj);
         UiAnimation.closePausePaneleEAffects(resumeicoobj, homeicoobj, returnicoobj);
@@ -132,8 +123,6 @@ public class GameplayController : MonoBehaviour
 
     public void menuhome()
     {
-        banner.SetActive(true);
-        bannerm.SetActive(false);
         FindObjectOfType<AudioManager>().PlaySound("click");
         if (in_gameover == 1)
         {
@@ -153,8 +142,6 @@ public class GameplayController : MonoBehaviour
     //////////////////////////////////////////Game over//////////////////////////////
     public void gameover()
     {
-        banner.SetActive(true);
-        bannerm.SetActive(false);
         in_gameover = 1;
         if (loos == false)
         {
@@ -201,8 +188,6 @@ public class GameplayController : MonoBehaviour
 
     public void Beginthegame()
     {
-        banner.SetActive(false);
-        bannerm.SetActive(true);
         FindObjectOfType<AudioManager>().PlaySound("click");
         loop_of_return_canva.loop_berig_script = false;
         StartCoroutine(delay());

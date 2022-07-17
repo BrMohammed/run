@@ -1,47 +1,119 @@
 fileFormatVersion: 2
 guid: c49110352a6a2e14e84a2a95f6acdbbe
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: wheel
-    100004: wheel_2
-    100006: wheel_3
-    100008: wheel_4
-    100010: wheel_5
-    100012: wheel_6
-    400000: //RootNode
-    400002: wheel
-    400004: wheel_2
-    400006: wheel_3
-    400008: wheel_4
-    400010: wheel_5
-    400012: wheel_6
-    2100000: No Name
-    2300000: //RootNode
-    2300002: wheel
-    2300004: wheel_2
-    2300006: wheel_3
-    2300008: wheel_4
-    2300010: wheel_5
-    2300012: wheel_6
-    3300000: //RootNode
-    3300002: wheel
-    3300004: wheel_2
-    3300006: wheel_3
-    3300008: wheel_4
-    3300010: wheel_5
-    3300012: wheel_6
-    4300000: bus
-    4300002: wheel
-    4300004: wheel_2
-    4300006: wheel_3
-    4300008: wheel_4
-    4300010: wheel_5
-    4300012: wheel_6
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: wheel
+  - first:
+      1: 100004
+    second: wheel_2
+  - first:
+      1: 100006
+    second: wheel_3
+  - first:
+      1: 100008
+    second: wheel_4
+  - first:
+      1: 100010
+    second: wheel_5
+  - first:
+      1: 100012
+    second: wheel_6
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: wheel
+  - first:
+      4: 400004
+    second: wheel_2
+  - first:
+      4: 400006
+    second: wheel_3
+  - first:
+      4: 400008
+    second: wheel_4
+  - first:
+      4: 400010
+    second: wheel_5
+  - first:
+      4: 400012
+    second: wheel_6
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: wheel
+  - first:
+      23: 2300004
+    second: wheel_2
+  - first:
+      23: 2300006
+    second: wheel_3
+  - first:
+      23: 2300008
+    second: wheel_4
+  - first:
+      23: 2300010
+    second: wheel_5
+  - first:
+      23: 2300012
+    second: wheel_6
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: wheel
+  - first:
+      33: 3300004
+    second: wheel_2
+  - first:
+      33: 3300006
+    second: wheel_3
+  - first:
+      33: 3300008
+    second: wheel_4
+  - first:
+      33: 3300010
+    second: wheel_5
+  - first:
+      33: 3300012
+    second: wheel_6
+  - first:
+      43: 4300000
+    second: bus
+  - first:
+      43: 4300002
+    second: wheel
+  - first:
+      43: 4300004
+    second: wheel_2
+  - first:
+      43: 4300006
+    second: wheel_3
+  - first:
+      43: 4300008
+    second: wheel_4
+  - first:
+      43: 4300010
+    second: wheel_5
+  - first:
+      43: 4300012
+    second: wheel_6
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -71,28 +143,31 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 1
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    indexFormat: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -101,10 +176,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -114,13 +189,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

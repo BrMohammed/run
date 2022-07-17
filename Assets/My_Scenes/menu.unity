@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1642737121}
-  m_IndirectSpecularColor: {r: 0.32748753, g: 0.31015712, b: 0.16666433, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -567,7 +567,7 @@ MonoBehaviour:
   - {fileID: 1195122995152184089}
   gamebegin: 1
   banner: {fileID: 266560923}
-  bannerm: {fileID: 852789230}
+  bannerm: {fileID: 0}
 --- !u!4 &229167719
 Transform:
   m_ObjectHideFlags: 0
@@ -772,7 +772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5330522c9afb94cc086ab94fce209469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  banner: {fileID: 266560923}
 --- !u!1 &277253631
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,50 +3561,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806393657}
   m_CullTransparentMesh: 0
---- !u!1 &852789230
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 852789232}
-  - component: {fileID: 852789231}
-  m_Layer: 0
-  m_Name: _ads_holder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &852789231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852789230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5330522c9afb94cc086ab94fce209469, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  banner: {fileID: 852789230}
---- !u!4 &852789232
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852789230}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.41117, y: 1.9321468, z: 101.99017}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &889244661
 GameObject:
   m_ObjectHideFlags: 0
@@ -7498,7 +7453,7 @@ PrefabInstance:
     - target: {fileID: 7820678162230928208, guid: 67aba13fd16e24cb8b1499fc679f6e94,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67aba13fd16e24cb8b1499fc679f6e94, type: 3}

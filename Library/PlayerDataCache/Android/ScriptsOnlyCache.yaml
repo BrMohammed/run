@@ -923,7 +923,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: ae1953296a751d07679fdc7b83c7e6e8
+      Hash: df48864097613519ab7bd184e9d74528
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameplayController
@@ -1514,4 +1514,4 @@ ScriptsOnlyBuild:
   - Assets/My_Scenes/loading.unity
   - Assets/My_Scenes/menu.unity
   - Assets/My_Scenes/Shop.unity
-  playerPath: /Users/brmohamm/Desktop/rn08.apk
+  playerPath: /Users/brmohamm/Desktop/rn17_Gmma_valga_remove_levels_high.apk
