@@ -7,7 +7,6 @@ public class Enable_Scripts : MonoBehaviour
     public static charactercontrool my_char_begine_Script;
     public static speed my_char_speed_Script;
     public static bool count_begin;
-    // Start is called before the first frame update
     void Start()
     {
         my_char_begine_Script = GetComponent<charactercontrool>();

@@ -51,10 +51,7 @@ public class GameplayController : MonoBehaviour
             if (i != characterSelect)
                 Destroy(Characters[i]);
         }
-        charactercontrool.speed = 15f;
-        charactercontrool.acceleration = 0.00002f;
         playermove = GameObject.FindGameObjectWithTag("Player");
-        
         playerrespawn = playermove.transform.position;
         //playerscore//
        

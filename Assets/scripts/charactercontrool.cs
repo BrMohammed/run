@@ -10,34 +10,26 @@ public class charactercontrool : MonoBehaviour
     private Vector3 EndToushP, StartTouchP;
     private bool jumpAllowed = false;
     private bool SlideAllowed = false;
-    public static float speed = 15f;
-   public static float acceleration = 0.00002f;
+    public static float speed;
+    public static float acceleration;
     public float jumpforce = 5f;
-    Animator anim;
     public Transform baraobj,seagull,cristal;
     public float baradestense = 50;
-    float jumperate = 0.9f;
-    float canjumpe = 0.1f;
     private bool issaad = false;
     private bool enter = false;
-
     private float period = 0f;
-    /// 
-
     public float gravity = 15;
     public float gravity_delay = 0.3f;
     private int characterSelect;
-
     Vector3 destent_for_cristal;
-
-  //  private ConstantForce gravity;
-
     private int baracount = 0;
+    [SerializeField] private GameObject Camera;
+    float p;
+
     private void Start()
     {
         speed = 15f;
         acceleration = 0.00002f;
-
         thisrigid = GetComponent<Rigidbody>();
         GetComponent<Animator>().SetBool("isRuning", true);
         GetComponent<Animator>().SetBool("isJumping", false);
@@ -46,12 +38,14 @@ public class charactercontrool : MonoBehaviour
         StartCoroutine(CoinTime());
         string shopDataString = SimpelDb.read("SaveDataShop");
         characterSelect = shopDataString.Contains(":") ? int.Parse(shopDataString.Split(':', ',')[1]) : 0;
+        p = this.transform.position.z - Camera.transform.position.z;
     }
 
     private void Update()
     {
-        
-        GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed += acceleration * Time.deltaTime);
+        speed += acceleration * Time.deltaTime;
+        GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed);
+        Camera.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y, this.transform.position.z - p);
         period += Time.deltaTime;
         if (issaad == false)
         {
@@ -113,8 +107,6 @@ public class charactercontrool : MonoBehaviour
             GetComponent<Animator>().SetBool("isJumping", false);
         }
     }
-
-
     void Jump()
     {
         thisrigid.AddForce(Vector3.up * jumpforce);
@@ -125,6 +117,7 @@ public class charactercontrool : MonoBehaviour
         yield return new WaitForSeconds(gravity_delay);
         thisrigid.AddForce(Vector3.down * gravity);
     }
+
     /////////////////////////////////////////bara tatch/////////////////
 
     void OnCollisionEnter(Collision character)
