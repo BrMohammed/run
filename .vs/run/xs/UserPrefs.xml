@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{B75B64CE-5A50-4A86-4EA9-D698B9736114}|Unit Tests">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/charactercontrool.cs">
     <Files>
-      <File FileName="Assets/scripts/charactercontrool.cs" Line="26" Column="48" />
+      <File FileName="Assets/scripts/charactercontrool.cs" Line="48" Column="138" />
       <File FileName="Assets/scripts/GameplayController.cs" Line="17" Column="54" />
       <File FileName="Assets/scripts/speed.cs" Line="16" Column="69" />
     </Files>
