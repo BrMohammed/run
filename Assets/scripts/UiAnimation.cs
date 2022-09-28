@@ -51,15 +51,24 @@ public class UiAnimation : MonoBehaviour
         LeanTween.scale(buttenobj, new Vector3(buttenobj.transform.localScale.x / 1.5f, buttenobj.transform.localScale.y / 1.5f, buttenobj.transform.localScale.z / 1.5f), 0.05f).setIgnoreTimeScale(true);
         LeanTween.scale(buttenobj, new Vector3((buttenobj.transform.localScale.x / 1.5f) * 1.5f, (buttenobj.transform.localScale.y / 1.5f) * 1.5f, (buttenobj.transform.localScale.z / 1.5f) * 1.5f), 0.05f).setDelay(0.05f).setIgnoreTimeScale(true);
     }
-
-    static public void gameovereffect(GameObject Gogameovericoobj, GameObject Gohighscoreicoobj, GameObject Goscoreicoobj, GameObject Gohomeicoobj, GameObject Goretrygameicoobj)
+    static public void ADwatchEffect(GameObject adwatch)
+    {
+        adwatch.transform.localScale = new Vector3(0.8f, 0.8f, 0f);
+        LeanTween.scale(adwatch, new Vector3(1.1f, 1.1f, 0), 0.8f)
+            .setEaseLinear()
+            .setLoopPingPong()
+            .setDelay(0.2f);
+    }
+    static public void gameovereffect(GameObject Gogameovericoobj, GameObject Gohighscoreicoobj, GameObject Goscoreicoobj, GameObject Gohomeicoobj, GameObject Goretrygameicoobj, GameObject Adwatch)
     {
         Gogameovericoobj.transform.localScale = new Vector3(0f, 0f, 0f);
         Gohighscoreicoobj.transform.localScale = new Vector3(0f, 0f, 0f);
         Goscoreicoobj.transform.localScale = new Vector3(0f, 0f, 0f);
         Gohomeicoobj.transform.localScale = new Vector3(0f, 0f, 0f);
         Goretrygameicoobj.transform.localScale = new Vector3(0f, 0f, 0f);
+        Adwatch.transform.localScale = new Vector3(0f, 0f, 0f); 
 
+        LeanTween.scale(Adwatch, new Vector3(1f, 1f, 0f), 1f).setDelay(0.2f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(Gogameovericoobj, new Vector3(1.4579f, 1.4579f, 1.4579f), 1f).setDelay(0.2f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(Gohighscoreicoobj, new Vector3(0.99371476f, 0.9371476f, 0.9371476f), 1f).setDelay(0.3f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(Goscoreicoobj, new Vector3(0.9371476f, 0.9371476f, 0.9371476f), 1f).setDelay(0.4f).setEase(LeanTweenType.easeOutElastic);
@@ -67,8 +76,9 @@ public class UiAnimation : MonoBehaviour
         LeanTween.scale(Goretrygameicoobj, new Vector3(0.702653f, 3.725312f, 0.702653f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeOutElastic);
     }
 
-    static public void close_gameovereffect(GameObject Gogameovericoobj, GameObject Gohighscoreicoobj, GameObject Goscoreicoobj, GameObject Gohomeicoobj, GameObject Goretrygameicoobj)
+    static public void close_gameovereffect(GameObject Gogameovericoobj, GameObject Gohighscoreicoobj, GameObject Goscoreicoobj, GameObject Gohomeicoobj, GameObject Goretrygameicoobj, GameObject Adwatch)
     {
+        LeanTween.scale(Adwatch, new Vector3(0, 0, 0), 0.5f).setDelay(0.2f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(Gogameovericoobj, new Vector3(0, 0, 0), 0.5f).setDelay(0.2f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(Gohighscoreicoobj, new Vector3(0, 0, 0), 0.5f).setDelay(0.3f).setEase(LeanTweenType.easeOutElastic);
         LeanTween.scale(Goscoreicoobj, new Vector3(0, 0, 0), 0.5f).setDelay(0.4f).setEase(LeanTweenType.easeOutElastic);
@@ -86,4 +96,5 @@ public class UiAnimation : MonoBehaviour
             r.color = c;
         }).setEase(LeanTweenType.easeInCirc);
     }
+   
 }

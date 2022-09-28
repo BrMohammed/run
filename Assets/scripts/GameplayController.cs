@@ -8,11 +8,12 @@ using UnityEngine.SceneManagement;
 public class GameplayController : MonoBehaviour
 {
     public static GameplayController instance;
+    public static bool Adwatch_loop = false;
     
     [SerializeField] private Text distancescore,gameoverscoretext, highscore, totalcoinGameover,totalcoinMenu;
     [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten, 
                                                 resumeicoobj, homeicoobj, returnicoobj,
-                                            Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj,parametericonobj;
+                                            Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj,parametericonobj,Adwatch;
     [Header("characters")]
     [SerializeField] private GameObject[] Characters;
     [SerializeField] private GameObject[] Maps;
@@ -123,7 +124,7 @@ public class GameplayController : MonoBehaviour
         FindObjectOfType<AudioManager>().PlaySound("click");
         if (in_gameover == 1)
         {
-            UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+            UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
             in_gameover = 0;
         }
         else
@@ -154,11 +155,18 @@ public class GameplayController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         gameoverpanal.SetActive(true);
-        UiAnimation.gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+        Adwatch_loop = true;
+        UiAnimation.gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
         gameoverscoretext.text = destanceunite.ToString();
         highscore.text = SimpelDb.read("score");
         destancepanel.SetActive(false);
         pausebutten.SetActive(false);
+        StartCoroutine(waitgAwatch());
+    }
+    IEnumerator waitgAwatch()
+    {
+        yield return new WaitForSeconds(2);
+        UiAnimation.ADwatchEffect(Adwatch);
     }
 
 //////////////////////////////////////////returne//////////////////////////////
@@ -168,7 +176,7 @@ public class GameplayController : MonoBehaviour
         loop_of_return_canva.loop_berig_script = true;
         if (in_gameover == 1)
         {
-            UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj);
+            UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
             in_gameover = 0;
         }
         else
