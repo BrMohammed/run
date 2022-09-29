@@ -829,7 +829,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: 7ce7db8e-aef9-4a4a-bab3-eddd16074747
   framebufferDepthMemorylessMode: 0
-  projectName: run
+  projectName: Run
   organizationId: voon001
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

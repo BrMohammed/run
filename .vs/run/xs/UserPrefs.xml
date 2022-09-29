@@ -1,12 +1,9 @@
 ﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameplayController.cs">
     <Files>
-      <File FileName="Assets/scripts/charactercontrool.cs" Line="18" Column="18" />
-      <File FileName="Assets/scripts/GameplayController.cs" Line="215" Column="9" />
-      <File FileName="Assets/scripts/speed.cs" Line="16" Column="69" />
+      <File FileName="Assets/scripts/charactercontrool.cs" Line="138" Column="19" />
+      <File FileName="Assets/scripts/GameplayController.cs" Line="216" Column="6" />
       <File FileName="Assets/scripts/Adreward.cs" Line="72" Column="10" />
-      <File FileName="Assets/scripts/UiAnimation.cs" Line="71" Column="32" />
-      <File FileName="Assets/scripts/Enable_Scripts.cs" Line="17" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +25,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4f980551-bf10-4ed4-99e8-9945c52b3ed9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d473a382-cdab-4519-925a-586c3096ac9f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -27,7 +27,7 @@ public class charactercontrool : MonoBehaviour
     float p;
     private void Start()
     {
-        speed = 15f;
+        speed = 20f;
         acceleration = 0.00002f;
         thisrigid = GetComponent<Rigidbody>();
         GetComponent<Animator>().SetBool("isRuning", true);
@@ -42,7 +42,8 @@ public class charactercontrool : MonoBehaviour
 
     private void Update()
     {
-        GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed += acceleration * Time.deltaTime);
+        speed += acceleration * Time.deltaTime;
+        GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed);
         Camera.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y, this.transform.position.z - p);
         period += Time.deltaTime;
         if (issaad == false)

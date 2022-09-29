@@ -16,7 +16,7 @@ public class GameplayController : MonoBehaviour
     [Header("characters")]
     [SerializeField] private GameObject[] Characters;
     [SerializeField] private GameObject[] Maps;
-    int destanceunite = 0;
+    static int  destanceunite;
     public bool gamebegin;
     private int characterSelect;
     private int MapsSelect;
@@ -39,7 +39,7 @@ public class GameplayController : MonoBehaviour
         //Debug.Log("MapsSelect" + MapsSelect);
         //Debug.Log("characterSelect" + characterSelect);
 
-        charactercontrool.speed = 15f;
+        charactercontrool.speed = 20f;
         charactercontrool.acceleration = 0.00002f;
 
         Characters[characterSelect].SetActive(true);
@@ -58,7 +58,7 @@ public class GameplayController : MonoBehaviour
         playerrespawn = playermove.transform.position;
         //playerscore//
        
-        InvokeRepeating("setscore", 0, 5/charactercontrool.speed);
+        InvokeRepeating("setscore", 0, charactercontrool.speed/ (charactercontrool.speed * 5));
 
         makeinstance();
 
@@ -89,7 +89,6 @@ public class GameplayController : MonoBehaviour
     //////////////////////////////////////////playerscore//////////////////////////////
     public void setscore()
     {
-        Debug.Log(destanceunite);
         if (charactercontrool.issaad ==  false && Enable_Scripts.count_begin == true)
         {
             destanceunite++;
@@ -124,6 +123,7 @@ public class GameplayController : MonoBehaviour
     public void menuhome()
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
+        destanceunite = 0;
         if (in_gameover == 1)
         {
             UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
@@ -166,13 +166,14 @@ public class GameplayController : MonoBehaviour
     }
     IEnumerator waitgAwatch()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.8f);
         UiAnimation.ADwatchEffect(Adwatch);
     }
 
 
     public void GameOver_Adwatch()
     {
+        FindObjectOfType<AudioManager>().PlaySound("click");
         loop_of_return_canva.loop_berig_script = true;
         UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
         StartCoroutine(deley_rGameOver_Adwatch());
@@ -181,16 +182,19 @@ public class GameplayController : MonoBehaviour
     IEnumerator deley_rGameOver_Adwatch()
     {
         yield return new WaitForSecondsRealtime(0.5f);
+        charactercontrool.acceleration += 0.00004f;
+        charactercontrool.issaad = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        destanceunite = int.Parse(SimpelDb.read("score"));
+        Enable_Scripts.enable_scripte();
     }
 
     //////////////////////////////////////////returne//////////////////////////////
     [Obsolete]
     public void returnegame()
     {
-        loop_of_return_canva.loop_berig_script = false;
+        destanceunite = 0;
+        loop_of_return_canva.loop_berig_script = true;
         if (in_gameover == 1)
         {
             UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
@@ -204,6 +208,7 @@ public class GameplayController : MonoBehaviour
     IEnumerator deley_returnegame()
     {
         yield return new WaitForSecondsRealtime(0.5f);
+        charactercontrool.issaad = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Enable_Scripts.enable_scripte();
@@ -213,6 +218,7 @@ public class GameplayController : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().PlaySound("click");
         loop_of_return_canva.loop_berig_script = false;
+        charactercontrool.issaad = false;
         StartCoroutine(delay());
     }
     IEnumerator delay()
