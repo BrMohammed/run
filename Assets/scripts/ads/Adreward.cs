@@ -18,42 +18,32 @@ public class Adreward : MonoBehaviour
     static int loadCount = 1;
 
     // Start is called before the first frame update
-    void OnEnable()
+    void Start()
     {
-		BtnReward.interactable = true;
-		BtnReward.gameObject.SetActive(false);
+		//BtnReward.interactable = false;
+		//BtnReward.gameObject.SetActive(false);
 		idReward = "ca-app-pub-3940256099942544/5224354917";
 
 		adReward = RewardBasedVideoAd.Instance;
 
         MobileAds.Initialize(initStatus => { });
 
-        //if (loadCount == 2)  // only show ad every third time
-        //{
-        //    loadCount = 1;
-        //    BtnReward.interactable = true;
-
-        //}
-        //else loadCount++;
-
     }
 
-
-	void Update()
-	{
-		if (RewardLoaded)
-		{
-			RewardLoaded = false;
-			BtnReward.gameObject.SetActive(true);
-		}
-	}
+	//void Update()
+	//{
+	//	if (RewardLoaded)
+	//	{
+	//		RewardLoaded = false;
+	//		BtnReward.gameObject.SetActive(true);
+	//	}
+	//}
 	#region Reward video methods ---------------------------------------------
 
 	public void RequestRewardAd()
 	{
 		AdRequest request = AdRequestBuild();
 		adReward.LoadAd(request, idReward);
-
 		adReward.OnAdLoaded += this.HandleOnRewardedAdLoaded;
 		adReward.OnAdRewarded += this.HandleOnAdRewarded;
 		adReward.OnAdClosed += this.HandleOnRewardedAdClosed;
@@ -69,8 +59,7 @@ public class Adreward : MonoBehaviour
 	{
 		//ad loaded
 		ShowRewardAd();
-		RewardLoaded = true;
-
+		//RewardLoaded = true;
 	}
 
 	public void HandleOnAdRewarded(object sender, EventArgs args) // end video
@@ -80,8 +69,8 @@ public class Adreward : MonoBehaviour
 
 	public void HandleOnRewardedAdClosed(object sender, EventArgs args)
 	{//ad closed (even if not finished watching)
-		BtnReward.interactable = true;
 
+		BtnReward.interactable = true;
 		adReward.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
 		adReward.OnAdRewarded -= this.HandleOnAdRewarded;
 		adReward.OnAdClosed -= this.HandleOnRewardedAdClosed;
@@ -89,14 +78,13 @@ public class Adreward : MonoBehaviour
 
 	#endregion
 
-
 	//other functions
-	//btn (more points) clicked
-	public void OnGetMoretimeClicked()
+	//btn (continue) clicked
+	public void OnGetContinueClicked()
 	{
-        BtnReward.interactable = false;
-        RequestRewardAd();
-    }
+		BtnReward.interactable = false;
+		RequestRewardAd();
+	}
 	//------------------------------------------------------------------------
 	AdRequest AdRequestBuild()
 	{
@@ -105,13 +93,8 @@ public class Adreward : MonoBehaviour
 
 	void OnDestroy()
 	{
-	
-
-	
-
 		adReward.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
 		adReward.OnAdRewarded -= this.HandleOnAdRewarded;
 		adReward.OnAdClosed -= this.HandleOnRewardedAdClosed;
-
 	}
 }

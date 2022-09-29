@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameplayController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ads/Admob.cs">
     <Files>
       <File FileName="Assets/scripts/charactercontrool.cs" Line="46" Column="92" />
-      <File FileName="Assets/scripts/GameplayController.cs" Line="61" Column="65" />
+      <File FileName="Assets/scripts/GameplayController.cs" />
+      <File FileName="Assets/scripts/ads/Adreward.cs" Line="21" Column="15" />
+      <File FileName="Assets/scripts/ads/Banner_ads.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/ads/Admob.cs" Line="27" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,9 +16,10 @@
                 <Node name="Framework" expanded="True" />
               </Node>
               <Node name="scripts" expanded="True">
-                <Node name="ads" expanded="True" />
+                <Node name="ads" expanded="True">
+                  <Node name="Admob.cs" selected="True" />
+                </Node>
                 <Node name="shop" expanded="True" />
-                <Node name="GameplayController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -26,7 +30,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d65adec6-f083-4b8b-94d3-d35e0295afd2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="73866ac3-ddc5-4bee-9285-0d35d16a0833" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

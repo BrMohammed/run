@@ -1,0 +1,4 @@
+#Thu Sep 29 22:17:43 WEST 2022
+base.0=/goinfre/brmohamm/run/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -23,7 +23,7 @@ public class Admob : MonoBehaviour
 		adNativePanel.SetActive(false); //hide ad panel
 	}
 
-	void Start()
+	void OnEnable()
 	{
 		//idApp = "ca-app-pub-3940256099942544~3347511713";
 		idNative = "ca-app-pub-3940256099942544/2247696110";
