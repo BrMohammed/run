@@ -739,6 +739,7 @@ GameObject:
   - component: {fileID: 266560924}
   - component: {fileID: 266560925}
   - component: {fileID: 266560926}
+  - component: {fileID: 266560927}
   m_Layer: 0
   m_Name: '_ads_holder '
   m_TagString: Untagged
@@ -786,6 +787,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GC: {fileID: 229167718}
   BtnReward: {fileID: 582231592}
+--- !u!114 &266560927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266560923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a6fe4e3e3674dafb4a9efa0395aaef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &277253631
 GameObject:
   m_ObjectHideFlags: 0

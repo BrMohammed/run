@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ads/Admob.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ads/inter.cs">
     <Files>
       <File FileName="Assets/scripts/charactercontrool.cs" Line="46" Column="92" />
       <File FileName="Assets/scripts/GameplayController.cs" Line="169" Column="44" />
-      <File FileName="Assets/scripts/Adreward.cs" Line="43" Column="1" />
-      <File FileName="Assets/scripts/menucontroler.cs" />
-      <File FileName="Assets/scripts/ads/Admob.cs" Line="23" Column="33" />
+      <File FileName="Assets/scripts/Adreward.cs" Line="58" Column="52" />
+      <File FileName="Assets/scripts/menucontroler.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/ads/Admob.cs" Line="57" Column="17" />
+      <File FileName="Assets/scripts/ads/Banner_ads.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/ads/inter.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +19,7 @@
               </Node>
               <Node name="scripts" expanded="True">
                 <Node name="ads" expanded="True">
-                  <Node name="Admob.cs" selected="True" />
+                  <Node name="inter.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
