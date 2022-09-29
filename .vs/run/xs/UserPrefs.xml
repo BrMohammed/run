@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/readtrigger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ads/Admob.cs">
     <Files>
-      <File FileName="Assets/scripts/charactercontrool.cs" Line="36" Column="35" />
-      <File FileName="Assets/scripts/GameplayController.cs" Line="61" Column="93" />
-      <File FileName="Assets/scripts/Adreward.cs" Line="72" Column="10" />
-      <File FileName="Assets/scripts/menucontroler.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/readtrigger.cs" Line="8" Column="8" />
+      <File FileName="Assets/scripts/charactercontrool.cs" Line="46" Column="92" />
+      <File FileName="Assets/scripts/GameplayController.cs" Line="169" Column="44" />
+      <File FileName="Assets/scripts/Adreward.cs" Line="43" Column="1" />
+      <File FileName="Assets/scripts/menucontroler.cs" />
+      <File FileName="Assets/scripts/ads/Admob.cs" Line="23" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +16,9 @@
                 <Node name="Framework" expanded="True" />
               </Node>
               <Node name="scripts" expanded="True">
-                <Node name="readtrigger.cs" selected="True" />
+                <Node name="ads" expanded="True">
+                  <Node name="Admob.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -27,7 +29,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d473a382-cdab-4519-925a-586c3096ac9f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d65adec6-f083-4b8b-94d3-d35e0295afd2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -58,7 +58,7 @@ public class GameplayController : MonoBehaviour
         playerrespawn = playermove.transform.position;
         //playerscore//
        
-        InvokeRepeating("setscore", 0, charactercontrool.speed/ (charactercontrool.speed * 5));
+        InvokeRepeating("setscore", 0, (charactercontrool.speed * 5) / charactercontrool.speed);
 
         makeinstance();
 
@@ -166,7 +166,7 @@ public class GameplayController : MonoBehaviour
     }
     IEnumerator waitgAwatch()
     {
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.5f);
         UiAnimation.ADwatchEffect(Adwatch);
     }
 
