@@ -15,7 +15,7 @@ public class charactercontrool : MonoBehaviour
     public float jumpforce = 5f;
     public Transform baraobj,seagull,cristal;
     public float baradestense = 50;
-    private bool issaad = false;
+    public static bool issaad = false;
     private bool enter = false;
     private float period = 0f;
     public float gravity = 15;
@@ -25,7 +25,6 @@ public class charactercontrool : MonoBehaviour
     private int baracount = 0;
     [SerializeField] private GameObject Camera;
     float p;
-
     private void Start()
     {
         speed = 15f;
@@ -43,13 +42,11 @@ public class charactercontrool : MonoBehaviour
 
     private void Update()
     {
-        speed += acceleration * Time.deltaTime;
-        GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed);
+        GetComponent<Rigidbody> ().velocity = new Vector3 (0, thisrigid.velocity.y, speed += acceleration * Time.deltaTime);
         Camera.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y, this.transform.position.z - p);
         period += Time.deltaTime;
         if (issaad == false)
         {
-
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
                 StartTouchP = Input.GetTouch(0).position;
             if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
@@ -126,7 +123,6 @@ public class charactercontrool : MonoBehaviour
         {
             issaad = true;
             speed = 0;
-            acceleration = 0;
             GetComponent<Animator>().SetTrigger("issad");
             GameplayController.instance.gameover();
         }
@@ -158,7 +154,7 @@ public class charactercontrool : MonoBehaviour
 
     IEnumerator Bartime()
     {
-        while (speed != 0)
+        while (issaad != true)
         {
             if(Random.Range(0, 10) <= 8)
             {
@@ -181,7 +177,7 @@ public class charactercontrool : MonoBehaviour
     }
     IEnumerator CoinTime()
     {
-        while (speed != 0)
+        while (issaad != true)
         {
             Debug.Log(transform.position.z + baradestense + 20);
             Debug.Log(destent_for_cristal.z);

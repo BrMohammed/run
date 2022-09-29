@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class GameplayController : MonoBehaviour
 {
     public static GameplayController instance;
-    public static bool Adwatch_loop = false;
     
     [SerializeField] private Text distancescore,gameoverscoretext, highscore, totalcoinGameover,totalcoinMenu;
     [SerializeField] private GameObject pausePanal,gameoverpanal,destancepanel, menupanal,pausebutten, 
@@ -21,6 +20,7 @@ public class GameplayController : MonoBehaviour
     public bool gamebegin;
     private int characterSelect;
     private int MapsSelect;
+    static public bool watched_the_video = false;
 
 
     private AssetBundle myLoadedAssetBundle;
@@ -39,6 +39,8 @@ public class GameplayController : MonoBehaviour
         //Debug.Log("MapsSelect" + MapsSelect);
         //Debug.Log("characterSelect" + characterSelect);
 
+        charactercontrool.speed = 15f;
+        charactercontrool.acceleration = 0.00002f;
 
         Characters[characterSelect].SetActive(true);
         Maps[MapsSelect].SetActive(true);
@@ -87,11 +89,11 @@ public class GameplayController : MonoBehaviour
     //////////////////////////////////////////playerscore//////////////////////////////
     public void setscore()
     {
-        if (charactercontrool.speed != 0 && Enable_Scripts.count_begin == true)
+        Debug.Log(destanceunite);
+        if (charactercontrool.issaad ==  false && Enable_Scripts.count_begin == true)
         {
             destanceunite++;
             distancescore.text = destanceunite.ToString();
-
         }
        
     }
@@ -146,8 +148,8 @@ public class GameplayController : MonoBehaviour
             loos = true;
             FindObjectOfType<AudioManager>().PlaySound("loos");
             if (int.Parse(SimpelDb.read("score")) <= destanceunite)
-            SimpelDb.update(destanceunite.ToString(),"score");
-        StartCoroutine(waitgameover());
+                SimpelDb.update(destanceunite.ToString(),"score");
+            StartCoroutine(waitgameover());
         }
        
     }
@@ -155,7 +157,6 @@ public class GameplayController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         gameoverpanal.SetActive(true);
-        Adwatch_loop = true;
         UiAnimation.gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
         gameoverscoretext.text = destanceunite.ToString();
         highscore.text = SimpelDb.read("score");
@@ -169,11 +170,27 @@ public class GameplayController : MonoBehaviour
         UiAnimation.ADwatchEffect(Adwatch);
     }
 
-//////////////////////////////////////////returne//////////////////////////////
+
+    public void GameOver_Adwatch()
+    {
+        loop_of_return_canva.loop_berig_script = true;
+        UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
+        StartCoroutine(deley_rGameOver_Adwatch());
+    }
+
+    IEnumerator deley_rGameOver_Adwatch()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        destanceunite = int.Parse(SimpelDb.read("score"));
+    }
+
+    //////////////////////////////////////////returne//////////////////////////////
     [Obsolete]
     public void returnegame()
     {
-        loop_of_return_canva.loop_berig_script = true;
+        loop_of_return_canva.loop_berig_script = false;
         if (in_gameover == 1)
         {
             UiAnimation.close_gameovereffect(Gogameovericoobj, Gohighscoreicoobj, Goscoreicoobj, Gohomeicoobj, Goretrygameicoobj, Adwatch);
@@ -189,6 +206,7 @@ public class GameplayController : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Enable_Scripts.enable_scripte();
     }
 
     public void Beginthegame()

@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/UiAnimation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameplayController.cs">
     <Files>
-      <File FileName="Assets/scripts/charactercontrool.cs" Line="48" Column="138" />
-      <File FileName="Assets/scripts/GameplayController.cs" Line="158" Column="29" />
-      <File FileName="Assets/scripts/speed.cs" />
+      <File FileName="Assets/scripts/charactercontrool.cs" Line="18" Column="18" />
+      <File FileName="Assets/scripts/GameplayController.cs" Line="215" Column="9" />
+      <File FileName="Assets/scripts/speed.cs" Line="16" Column="69" />
       <File FileName="Assets/scripts/Adreward.cs" Line="72" Column="10" />
-      <File FileName="Assets/scripts/UiAnimation.cs" Line="54" Column="12" />
+      <File FileName="Assets/scripts/UiAnimation.cs" Line="71" Column="32" />
+      <File FileName="Assets/scripts/Enable_Scripts.cs" Line="17" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +17,7 @@
                 <Node name="Framework" expanded="True" />
               </Node>
               <Node name="scripts" expanded="True">
-                <Node name="UiAnimation.cs" selected="True" />
+                <Node name="GameplayController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
