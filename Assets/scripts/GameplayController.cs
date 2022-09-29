@@ -58,7 +58,7 @@ public class GameplayController : MonoBehaviour
         playerrespawn = playermove.transform.position;
         //playerscore//
        
-        InvokeRepeating("setscore", 0, (charactercontrool.speed * 5) / charactercontrool.speed);
+        InvokeRepeating("setscore", 0, (charactercontrool.speed ) / (charactercontrool.speed * 1.2f));
 
         makeinstance();
 

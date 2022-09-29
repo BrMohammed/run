@@ -65,9 +65,18 @@ namespace ShopSystem
         private void setinfo()
         {
             if (ShopDataUI.ShopItems[curentIndex].unlocCost == 0)
+            {
+                Select.interactable = true;
                 UnlockBtnText.text = "Select";
+            }
             else
+            {
+                if(Shopcoin >= ShopDataUI.ShopItems[curentIndex].unlocCost)
+                    Select.interactable = true;
+                else
+                    Select.interactable = false;
                 UnlockBtnText.text = ShopDataUI.ShopItems[curentIndex].unlocCost.ToString();
+            }
         }
 
         private void NextBtnMeth()

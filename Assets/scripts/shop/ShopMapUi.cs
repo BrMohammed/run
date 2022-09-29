@@ -36,9 +36,19 @@ namespace ShopSystem
         private void setinfo()
         {
             if (ShopMapDataUI.ShopItems[curentIndex].UnlockCost == 0)
+            {
+                Select.interactable = true;
                 UnlockBtnText.text = "Select";
+            }
             else
+            {
+
+                if (HighScore >= ShopMapDataUI.ShopItems[curentIndex].UnlockCost)
+                    Select.interactable = true;
+                else
+                    Select.interactable = false;
                 UnlockBtnText.text = ShopMapDataUI.ShopItems[curentIndex].UnlockCost.ToString() + " / " + HighScore.ToString();
+            }
         }
 
         private void NextBtnMeth()
