@@ -28,6 +28,8 @@ ScriptsOnlyBuild:
     - GoogleMobileAds.Placement.GoogleMobileAdsPlacements
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.DeviceSimulator.Editor.dll:
@@ -101,35 +103,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11740}
+      Script: {instanceID: 11762}
     - Class: 114
-      Script: {instanceID: 11758}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 11958}
+      Script: {instanceID: 11980}
     - Class: 114
-      Script: {instanceID: 11994}
+      Script: {instanceID: 12016}
     - Class: 114
-      Script: {instanceID: 12136}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12606}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12958}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 14048}
+      Script: {instanceID: 14070}
     - Class: 114
-      Script: {instanceID: 14188}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 15110}
+      Script: {instanceID: 15132}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15164}
     - Class: 114
-      Script: {instanceID: 15736}
+      Script: {instanceID: 15758}
     - Class: 114
-      Script: {instanceID: 15990}
+      Script: {instanceID: 16012}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -184,41 +186,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11740}
+      Script: {instanceID: 11762}
     - Class: 114
-      Script: {instanceID: 11758}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 12136}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12874}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 12892}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 13128}
+      Script: {instanceID: 13150}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13674}
     - Class: 114
-      Script: {instanceID: 13958}
+      Script: {instanceID: 13980}
     - Class: 114
-      Script: {instanceID: 14048}
-    - Class: 114
-      Script: {instanceID: 14572}
+      Script: {instanceID: 14070}
     - Class: 114
       Script: {instanceID: 14594}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 14616}
     - Class: 114
-      Script: {instanceID: 15536}
+      Script: {instanceID: 15164}
     - Class: 114
-      Script: {instanceID: 15770}
+      Script: {instanceID: 15558}
     - Class: 114
-      Script: {instanceID: 15984}
+      Script: {instanceID: 15792}
     - Class: 114
-      Script: {instanceID: 15990}
+      Script: {instanceID: 16006}
+    - Class: 114
+      Script: {instanceID: 16012}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -279,55 +281,55 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11740}
+      Script: {instanceID: 11762}
     - Class: 114
-      Script: {instanceID: 11758}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 11894}
+      Script: {instanceID: 11916}
     - Class: 114
-      Script: {instanceID: 12136}
-    - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12158}
     - Class: 114
       Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12312}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12606}
+      Script: {instanceID: 12334}
     - Class: 114
-      Script: {instanceID: 12916}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 12938}
     - Class: 114
-      Script: {instanceID: 13874}
+      Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 14048}
+      Script: {instanceID: 13896}
     - Class: 114
-      Script: {instanceID: 14072}
+      Script: {instanceID: 14070}
     - Class: 114
-      Script: {instanceID: 14092}
+      Script: {instanceID: 14094}
     - Class: 114
-      Script: {instanceID: 14572}
+      Script: {instanceID: 14114}
     - Class: 114
-      Script: {instanceID: 14780}
+      Script: {instanceID: 14594}
     - Class: 114
-      Script: {instanceID: 14824}
+      Script: {instanceID: 14802}
     - Class: 114
-      Script: {instanceID: 15010}
+      Script: {instanceID: 14846}
     - Class: 114
-      Script: {instanceID: 15110}
+      Script: {instanceID: 15032}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15132}
     - Class: 114
-      Script: {instanceID: 15566}
+      Script: {instanceID: 15164}
     - Class: 114
-      Script: {instanceID: 15628}
+      Script: {instanceID: 15588}
     - Class: 114
-      Script: {instanceID: 15736}
+      Script: {instanceID: 15650}
     - Class: 114
-      Script: {instanceID: 15892}
+      Script: {instanceID: 15758}
     - Class: 114
-      Script: {instanceID: 15990}
+      Script: {instanceID: 15914}
+    - Class: 114
+      Script: {instanceID: 16012}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1530,4 +1532,4 @@ ScriptsOnlyBuild:
   - Assets/My_Scenes/loading.unity
   - Assets/My_Scenes/menu.unity
   - Assets/My_Scenes/Shop.unity
-  playerPath: /Users/brmohamm/Desktop/rn04.apk
+  playerPath: /Users/brmohamm/Desktop/rn08.apk

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/goinfre/brmohamm/run/Temp/gradleOut/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-hi/values-hi.xml",
+            "outputFile": "/goinfre/brmohamm/run02/Temp/gradleOut/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-hi/values-hi.xml",
             "map": [
                 {
-                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/6b0808124cb2ad8fc141e0253742d2fe/res/values-hi/values.xml",
+                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/557717e6b030e7c044710f9502852a6f/res/values-hi/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/6e46866bb110fbc3e1a8777b75b70a50/res/values-hi/values-hi.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "17",
-                        "startColumns": "4",
-                        "startOffsets": "1765",
-                        "endColumns": "100",
-                        "endOffsets": "1861"
-                    }
-                },
-                {
-                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/23035af0b8bc8f78f932f816acd097f5/res/values-hi/values.xml",
+                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/1853f2c6f4ffd086c7944b2443f96bcd/res/values-hi/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "310,425,571,659,803,893,1047,1162,1236,1366,1439,1511,1592,1690",
                         "endColumns": "114,145,87,143,89,153,114,73,129,72,71,80,97,74",
                         "endOffsets": "420,566,654,798,888,1042,1157,1231,1361,1434,1506,1587,1685,1760"
+                    }
+                },
+                {
+                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/c70d5611c7d40476655899e4f3f70856/res/values-hi/values-hi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1765",
+                        "endColumns": "100",
+                        "endOffsets": "1861"
                     }
                 }
             ]

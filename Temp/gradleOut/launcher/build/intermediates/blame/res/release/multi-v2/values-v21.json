@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/goinfre/brmohamm/run/Temp/gradleOut/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/goinfre/brmohamm/run02/Temp/gradleOut/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/6e46866bb110fbc3e1a8777b75b70a50/res/values-v21/values-v21.xml",
+                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/c70d5611c7d40476655899e4f3f70856/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/goinfre/brmohamm/run/Temp/gradleOut/launcher/src/main/res/values-v21/styles.xml",
+                    "source": "/goinfre/brmohamm/run02/Temp/gradleOut/launcher/src/main/res/values-v21/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "0",

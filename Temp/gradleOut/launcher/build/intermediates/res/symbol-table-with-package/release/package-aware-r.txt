@@ -173,7 +173,6 @@ layout notification_template_part_time
 mipmap app_icon
 mipmap app_icon_round
 mipmap ic_launcher_background
-mipmap ic_launcher_foreground
 string app_name
 string common_google_play_services_unknown_issue
 string game_view_content_description

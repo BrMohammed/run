@@ -14,7 +14,7 @@
     <meta-data android:name="unity.splash-enable" android:value="True" />
     <meta-data android:name="unity.allow-resizable-window" android:value="False" />
     <meta-data android:name="notch.config" android:value="portrait|landscape" />
-    <meta-data android:name="unity.build-id" android:value="9e302b3d-0ee2-48a5-a83c-dc3b9793ceb8" />
+    <meta-data android:name="unity.build-id" android:value="f6810fcd-d0c1-4b69-8f12-58bc09479d48" />
   </application>
   <uses-feature android:glEsVersion="0x00020000" />
   <uses-permission android:name="android.permission.INTERNET" />
