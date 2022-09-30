@@ -67,7 +67,7 @@ public class Loading : MonoBehaviour
 	public void OnUserClickPrivacyPolicy ()
 	{
 		FindObjectOfType<AudioManager>().PlaySound("click");
-		Application.OpenURL ("https://www.google.com/"); //your privacy url
+		Application.OpenURL ("https://sites.google.com/view/runlikecrazy"); //your privacy url
 	}
 
 	public void M_Sound()

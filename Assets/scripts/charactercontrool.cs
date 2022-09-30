@@ -180,8 +180,8 @@ public class charactercontrool : MonoBehaviour
     {
         while (issaad != true)
         {
-            Debug.Log(transform.position.z + baradestense + 20);
-            Debug.Log(destent_for_cristal.z);
+            //Debug.Log(transform.position.z + baradestense + 20);
+           // Debug.Log(destent_for_cristal.z);
             if (transform.position.z + baradestense + 20 < destent_for_cristal.z || transform.position.z + baradestense + 20 > destent_for_cristal.z)
             Instantiate(cristal, new Vector3(0.30f, 0.6f, transform.position.z + baradestense + Random.Range(50, 90)), cristal.rotation);
             yield return new WaitForSeconds(Random.Range(8f, 15f));

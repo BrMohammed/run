@@ -242,4 +242,16 @@ public class GameplayController : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         SceneManager.LoadSceneAsync(2);
     }
+
+    public void OnUserClickRatMe()
+    {
+        FindObjectOfType<AudioManager>().PlaySound("click");
+        Application.OpenURL("https://play.google.com/store/apps/details?id=com.voon.runlikecrazy"); //your privacy url
+    }
+
+    public void OnUserClickInsta()
+    {
+        FindObjectOfType<AudioManager>().PlaySound("click");
+        Application.OpenURL("https://www.instagram.com/voon.games/"); //your privacy url
+    }
 }

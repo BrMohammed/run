@@ -32,7 +32,7 @@ public class CristalMove : MonoBehaviour
             int totalcoin = int.Parse(SimpelDb.read("TotalCoin"));
             totalcoin++;
             SimpelDb.update(totalcoin.ToString(), "TotalCoin");
-            Debug.Log(totalcoin);
+           // Debug.Log(totalcoin);
             Instantiate(explogen, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

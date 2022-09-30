@@ -208,7 +208,7 @@ namespace ShopSystem
             M_Music();
             FindObjectOfType<AudioManager>().PlaySound("click_on");
             SimpelDb.update(0.ToString(), "Music");
-            Debug.Log(SimpelDb.read("Music"));
+           // Debug.Log(SimpelDb.read("Music"));
             MusicOffObj.SetActive(false);
             MusicOnObj.SetActive(true);
 

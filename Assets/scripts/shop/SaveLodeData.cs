@@ -48,7 +48,7 @@ namespace ShopSystem
         }
         public void ClearData()
         {
-            Debug.Log("Clear");
+           // Debug.Log("Clear");
             SimpelDb.update(0.ToString(), "gamestart");
         }
     }

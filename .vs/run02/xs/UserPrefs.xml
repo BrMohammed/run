@@ -1,7 +1,8 @@
-﻿<Properties StartupConfiguration="{11CE2C76-499F-F008-BF86-1FD4D2992C7A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Admob.cs">
+﻿<Properties StartupConfiguration="{F0D36045-C75C-34CF-EF3A-4F6E9B0131C1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameplayController.cs">
     <Files>
-      <File FileName="Assets/scripts/Admob.cs" Line="4" Column="14" />
+      <File FileName="Assets/scripts/Loading.cs" Line="67" Column="2" />
+      <File FileName="Assets/scripts/GameplayController.cs" Line="250" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +10,7 @@
           <Node name="run02" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="scripts" expanded="True">
-                <Node name="Admob.cs" selected="True" />
+                <Node name="GameplayController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -19,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b1471769-0ff2-4ff8-b642-ade285f3a3a9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bc76cd5e-56ad-4b9d-8896-5e522819c84a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
