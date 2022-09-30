@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/goinfre/brmohamm/run02/Temp/gradleOut/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "map": [
+                {
+                    "source": "/goinfre/brmohamm/.gradle/caches/transforms-2/files-2.1/c70d5611c7d40476655899e4f3f70856/res/values-en-rIN/values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}
