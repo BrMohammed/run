@@ -1,7 +1,7 @@
 # run like crazy 
 
 Simple hyper casual game ,every thing from scratch all 3d assets and UI 
-[I'm an inline-style link](https://play.google.com/store/apps/details?id=com.voon.runlikecrazy)
+[My game in play store](https://play.google.com/store/apps/details?id=com.voon.runlikecrazy)
 
 <img width="365" alt="Screen Shot 2022-12-02 at 2 29 54 AM" src="https://user-images.githubusercontent.com/65908703/205194261-76cbb53e-7783-40a5-a01a-5ad02d5229c4.png">
 
